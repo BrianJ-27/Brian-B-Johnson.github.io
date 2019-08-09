@@ -338,6 +338,10 @@ header {
   width: 100%;
   position: fixed; }
 
+main {
+  max-width: 1200px;
+  width: 100%; }
+
 nav {
   padding-top: 6em; }
 
@@ -355,5 +359,12 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 1px; }
+
+.title__secondary {
+  padding: .5em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

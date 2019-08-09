@@ -17,6 +17,11 @@ header{
     position: fixed;
 }
 
+main{
+    max-width: $max-width;
+    width: 100%;
+}
+
 nav{
     padding-top: 6em;
 }
