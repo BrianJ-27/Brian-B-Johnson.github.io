@@ -326,4 +326,25 @@ template {
 * {
   box-sizing: border-box; }
 
+html {
+  background: #878787; }
+
+body {
+  position: relative; }
+
+header {
+  height: 100px;
+  background: #111E6C;
+  width: 100%;
+  position: fixed; }
+
+nav {
+  padding-top: 6em; }
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0; }
+
 /*# sourceMappingURL=styles.css.map */

@@ -2,3 +2,29 @@
     box-sizing: border-box;
 }
 
+html{
+    background: $color-bg;
+}
+
+body{
+    position: relative;
+}
+
+header{
+    height: $header-height;
+    background: $color-main;
+    width: 100%;
+    position: fixed;
+}
+
+nav{
+    padding-top: 6em;
+}
+
+h1,
+h2,
+h3{
+    margin: 0;
+    padding: 0;
+}
+
