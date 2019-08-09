@@ -1,41 +1,90 @@
 // **************************************
 // GLOBAL VARIABLES
 // **************************************
-
-//Base Colors
+/*-----Descriptive Color Variables-----*/
 $white: #fff;
-$base-color: rgb(17, 31, 107);
-$secondary-color: rgb(159, 163, 166);
-$base-color-light: lighten($base-color, 25%);
-$base-color-lightest: lighten($base-color, 50%);
-$base-color-dark: darken($base-color, 25%);
+$black: #000;
+$grey: #878787;
+$tire-wheel: #2F2F2F;
+$silver-surfer: #DBDBDB;
+$deep-koamaru: #111E6C;
+$sunflower: #FFBF00;
 
+$bright-sky: #9DE5FF;
+$the-hulk: #3B7A57;
+$algae-green: #93DFB8;
+$amethyst-smoke: #A397B4;
+$barney: #714693;
+$bone: #D4C4A8;
+$almond: #EED9C4;
+$grey-poupon: #AF8F2C;
+$apple-blossom: #AF4D43;
+$apricot: #EB9373;
+$burnt-orange: #DA6304;
+$bean: #3D0C02;
+$bubblegum: #EEC1BE;
 
+/*-----Functional Color Variables-----*/
+$color-main: $deep-koamaru;
+$color-main-light: lighten($color-main, 25%);
+$color-main-lightest: lighten($color-main, 50%);
+$color-main-dark: darken($color-main, 25%);
+$color-secondary: $silver-surfer;
+$color-accent: $sunflower;
+
+//background colors
+$color-bg: $color-main-lightest;
+$color-shadow: rgba($black, .8);
+
+//Link colors
+$color-link-default: $silver-surfer;
+$color-link-active: $color-main-light;
+$color-link-hover: $sunflower;
+$color-link-visited: $sunflower;
+
+//Border Colors
+$color-border-light: $color-accent;
+$color-border-dark: $color-main;
+
+//Headings & Paragraph Colors
+$color-text-light: $white;
+$color-text-base: $grey;
+$color-text-dark: $tire-wheel;
 
 //Button Colors
-$color-link-button-default: #69F6FF;
+$color-link-button-default: $color-main;
 /*
 I won't be using these variables for this project
-*/
 // $button-success: #09E827;
 // $button-error: #D13219;
 // $button-warning: #FF760D;
 // $button-info: #693D80;
-
+*/
 //layout
 $max-width: 1200px;
+$gutter: 15px;
+$header-height: 100px;
+$footer-height: 250px;
 
-//Font Stacks
-@import url('https://fonts.googleapis.com/css?family=Dosis');
-$font-google-primary: 'Dosis', sans-serif ;
-$font-secondary: 'Helvetica' sans-serif;
+//Font Stacks 
+$font-stack-montserrat: 'Montserrat', sans-serif;
+$font-stack-roboto: 'Roboto', sans-serif;
 $base-font-size: 16px;
-$font-color: #8c8c8c;
-$font-color-secondary: #606060;
+
+//border radius
+$soft-curve: 5px;
+$moderate-curve: 15px;
+$hard-curve: 25px;
+$full-circle: 50%;
+
+//Breakpoint Sizes
+$mobile-view: 320px;
+$tablet-view: 768px;
+$desktop-view: 1024px;
 
 // Media Query Breakpoint Map
 $breakpoints: (
-'sm': 320px,    
-'md': 768px,
-'lg': 1024px,
+'sm': $mobile-view,    
+'md': $tablet-view,
+'lg': $desktop-view,
 );

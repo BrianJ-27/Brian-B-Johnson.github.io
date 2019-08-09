@@ -1,17 +1,40 @@
 // **************************************
 // MIXINS
 // **************************************
-
-//Image Style Properties
-@mixin img_properties(
-  $height: null,
-  $width: null,
-  $br-radius: null,) 
+/*
+Important reminders: 
+1) using the "Null" keyword allows us to pass optional parameters to our mixins without bloating our code
+2) using the "Null" keyword also means we don't have to worry about the order of our parameters. 
+3) mixins work best 
+*/
+// Make a circled element
+@mixin roundy(
+  $dim:null,
+  $border:null) 
 {
-  display: block;
-  height: $height;
-  width: $width;
-  border-radius: $br-radius;
+  height:$dim;
+  width: $dim;
+  border: $border;
+  border-radius: 50%;
+}
+
+@mixin text-prop(
+  $size,
+  $l-height:null,
+  $f-weight:null,
+  $ltr-space:null,
+  $wrd-space:null,
+  $txt-align:null,
+  $txt-dec: null,
+  $color:null)
+  {
+    font-size: $size;
+    line-height: $l-height;
+    font-weight: $f-weight;
+    letter-spacing: $ltr-space;
+    word-spacing: $wrd-space;
+    text-align: $txt-align;
+    color: $color;
 }
 
 

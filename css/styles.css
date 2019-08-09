@@ -1,7 +1,23 @@
+/*-----Descriptive Color Variables-----*/
+/*-----Functional Color Variables-----*/
 /*
 I won't be using these variables for this project
+// $button-success: #09E827;
+// $button-error: #D13219;
+// $button-warning: #FF760D;
+// $button-info: #693D80;
 */
-@import url("https://fonts.googleapis.com/css?family=Dosis");
+/*
+Important reminders: 
+1) only use functions for simple calculations we can use 
+   instead of doing the math in our own head
+*/
+/*
+Important reminders: 
+1) using the "Null" keyword allows us to pass optional parameters to our mixins without bloating our code
+2) using the "Null" keyword also means we don't have to worry about the order of our parameters. 
+3) mixins work best 
+*/
 * {
   box-sizing: border-box; }
 
