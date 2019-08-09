@@ -1,0 +1,7 @@
+.title__primary{
+    @include text-prop($size:3em, $f-weight:400, $color:$color-text-light);
+    padding: .5em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}

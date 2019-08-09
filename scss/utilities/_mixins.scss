@@ -22,18 +22,11 @@ Important reminders:
   $size,
   $l-height:null,
   $f-weight:null,
-  $ltr-space:null,
-  $wrd-space:null,
-  $txt-align:null,
-  $txt-dec: null,
   $color:null)
   {
     font-size: $size;
     line-height: $l-height;
     font-weight: $f-weight;
-    letter-spacing: $ltr-space;
-    word-spacing: $wrd-space;
-    text-align: $txt-align;
     color: $color;
 }
 
