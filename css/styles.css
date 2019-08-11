@@ -356,6 +356,13 @@ main {
 nav {
   padding-top: 6em; }
 
+h1::after {
+  display: block;
+  height: 2px;
+  background-color: #FFBF00;
+  content: " ";
+  margin: .2em 0 1em .0em; }
+
 h1,
 h2,
 h3 {
@@ -363,13 +370,21 @@ h3 {
   padding: 0; }
 
 .title__primary {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: 400;
   color: #fff;
   padding: .5em;
   text-transform: uppercase;
   letter-spacing: 1px;
-  word-spacing: 1px; }
+  word-spacing: 1px;
+  margin-right: auto;
+  padding-right: 1em; }
+  @media (min-width: 768px) {
+    .title__primary {
+      margin-top: 1em;
+      letter-spacing: 2px;
+      font-size: 1.6em;
+      font-weight: 600; } }
 
 .title__secondary {
   padding: .5em;
@@ -378,69 +393,44 @@ h3 {
   word-spacing: 1px;
   text-align: center; }
 
-.hexagon__icon,
-.hamburger-menu {
-  position: absolute;
-  transform: translate(-50%, -50%) rotate(30deg); }
+.flex__container {
+  display: flex;
+  align-items: center; }
 
-.hamburger-menu {
-  right: 2%;
-  top: 1%;
-  transform: rotate(0deg); }
-
-.hexagon__icon {
-  right: -1%;
-  top: 35%;
-  width: 50px;
-  height: 29px;
-  background: #DBDBDB; }
-
-.hexagon__icon::before,
-.hexagon__icon::after {
-  content: '';
-  width: 100%;
-  height: 100%;
-  background: #DBDBDB;
-  position: absolute; }
-
-.hexagon__icon::before {
-  transform: rotate(60deg); }
-
-.hexagon__icon::after {
-  transform: rotate(-60deg); }
-
-.hexagon__icon,
-.hexagon__icon::before,
-.hexagon__icon::after {
-  background: transparent;
-  border-left: 1px solid #FFBF00;
-  border-right: 1px solid #FFBF00; }
+.hex-icon {
+  padding: .5em 1em 1em 1em;
+  width: 95px;
+  height: 95px; }
 
 .line {
   position: absolute;
-  top: 35px;
-  right: 6%;
+  margin-left: 32px;
+  top: 43px;
   height: 3px;
-  width: 45px;
+  width: 35px;
   background: #fff;
   border-radius: 12px;
   transition: all 0.3s ease; }
 
 .line1 {
   transform: translateY(-8px);
-  width: 35px; }
+  width: 30px; }
 
 .line3 {
   transform: translateY(8px);
-  width: 35px; }
+  width: 30px; }
 
 .change .line1 {
-  transform: translateY(5px) rotate(-45deg); }
+  transform: translateY(5px) rotate(-45deg) scale(1.2);
+  margin-top: -5px;
+  margin-left: 32px; }
 
 .change .line2 {
   opacity: 0; }
 
 .change .line3 {
-  transform: translateY(5px) rotate(45deg); }
+  transform: translateY(5px) rotate(45deg) scale(1.2);
+  margin-top: -5px;
+  margin-left: 32px; }
 
 /*# sourceMappingURL=styles.css.map */

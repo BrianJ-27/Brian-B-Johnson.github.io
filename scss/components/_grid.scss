@@ -1,8 +1,40 @@
-// .base__grid--container{
-    
+// .grid__container{
+//     display: grid;
+//     min-height: 100%;
+//     grid-template-columns: 100%; 
+//     grid-template-rows: auto auto 1fr auto;
+//     grid-template-areas:
+//     "header"
+//     "nav" 
+//     "main"
+//     "footer";
+// //     @include mq('md'){
+// //         display: grid;
+// //         grid-template-columns: 60px repeat(2, minmax(200px, auto)); 
+// //         grid-template-areas:
+// //         "header header header"
+// //         "navigation main main"
+// //         "navigation main main"
+// //         "navigation main main"
+// //         "navigation main main"
+// //         "navigation main main"; 
+// //   }    
 // }
 
+// // Grid Area Items
+// header {
+//     grid-area: header;
+// }
 
-// .main__grid--container{
+// nav {
+//     grid-area: nav;
+// }
 
+// main {
+//     grid-area: main;
+    
+// }
+// footer {
+//     grid-area: footer;
+    
 // }

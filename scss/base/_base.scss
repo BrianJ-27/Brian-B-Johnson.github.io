@@ -31,14 +31,14 @@ nav{
     padding-top: 6em;
 }
 
-// h1::after{
-//     display: block;
-//     height: 2px;
-//     background-color: $color-accent;
-//     content: " ";
-//     width: 200px;
-//     margin: .2em 0 .5em .7em;
-// }
+h1::after{
+    display: block;
+    height: 2px;
+    background-color: $color-accent;
+    content: " ";
+
+    margin: .2em 0 1em .0em;
+}
     
 
 h1,

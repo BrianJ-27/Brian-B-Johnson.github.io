@@ -1,9 +1,16 @@
 .title__primary{
-    @include text-prop($size:1.5em, $f-weight:400, $color:$color-text-light);
+    @include text-prop($size:1.3em, $f-weight:400, $color:$color-text-light);
     padding: .5em;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 1px;
+    margin-right: auto;
+    padding-right: 1em;
+    @include mq('md'){
+        margin-top: 1em;
+        letter-spacing: 2px;
+        @include text-prop($size:1.6em, $f-weight:600);
+    }
 }
 
 .title__secondary{
