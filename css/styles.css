@@ -363,7 +363,7 @@ h3 {
   padding: 0; }
 
 .title__primary {
-  font-size: 3em;
+  font-size: 1.5em;
   font-weight: 400;
   color: #fff;
   padding: .5em;
@@ -378,14 +378,22 @@ h3 {
   word-spacing: 1px;
   text-align: center; }
 
+.hexagon__icon,
+.hamburger-menu {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(30deg); }
+
+.hamburger-menu {
+  right: 2%;
+  top: 1%;
+  transform: rotate(0deg); }
+
 .hexagon__icon {
+  right: -1%;
+  top: 35%;
   width: 50px;
   height: 29px;
-  background: #DBDBDB;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%); }
+  background: #DBDBDB; }
 
 .hexagon__icon::before,
 .hexagon__icon::after {
@@ -400,5 +408,39 @@ h3 {
 
 .hexagon__icon::after {
   transform: rotate(-60deg); }
+
+.hexagon__icon,
+.hexagon__icon::before,
+.hexagon__icon::after {
+  background: transparent;
+  border-left: 1px solid #FFBF00;
+  border-right: 1px solid #FFBF00; }
+
+.line {
+  position: absolute;
+  top: 35px;
+  right: 6%;
+  height: 3px;
+  width: 45px;
+  background: #fff;
+  border-radius: 12px;
+  transition: all 0.3s ease; }
+
+.line1 {
+  transform: translateY(-8px);
+  width: 35px; }
+
+.line3 {
+  transform: translateY(8px);
+  width: 35px; }
+
+.change .line1 {
+  transform: translateY(5px) rotate(-45deg); }
+
+.change .line2 {
+  opacity: 0; }
+
+.change .line3 {
+  transform: translateY(5px) rotate(45deg); }
 
 /*# sourceMappingURL=styles.css.map */

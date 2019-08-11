@@ -1,11 +1,21 @@
+.hexagon__icon,
+.hamburger-menu{
+    position: absolute;
+    transform: translate(-50%, -50%) rotate(30deg);
+}
+
+.hamburger-menu{
+    right: 2%;
+    top: 1%;
+    transform: rotate(0deg);
+}
+
 .hexagon__icon{
+    right: -1%;
+    top: 35%;
     width: 50px;
     height: 29px;
     background: $color-bg;
-    position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .hexagon__icon::before,
@@ -24,3 +34,51 @@
 .hexagon__icon::after{
     transform: rotate(-60deg);
 }
+
+.hexagon__icon,
+.hexagon__icon::before,
+.hexagon__icon::after{
+    background: transparent;
+    border-left: 1px solid $color-border-light;
+    border-right: 1px solid $color-border-light;
+}
+
+//the 3 horizontal hamburger lines
+
+.line{
+    position: absolute;
+    top: 35px;
+    right: 6%;
+    height: 3px;
+    width: 45px;
+    background: $white;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+  }
+  
+  //The first horizontal hamburger line
+  .line1{
+    transform:translateY(-8px);
+    width: 35px;
+  }
+
+  //The third horizontal hamburger line
+  .line3{
+    transform:translateY(8px);
+    width: 35px;
+  }
+  
+  //when clicked the 1st line turns and shifts clockwise
+  .change .line1{
+    transform: translateY(5px) rotate(-45deg);
+  }
+  
+  //when clicked the second hamburger line disappears
+  .change .line2{
+    opacity: 0;
+  }
+  
+  //when clicked the 3rd line turns and shifts clockwise forming the X look
+  .change .line3{
+    transform: translateY(5px) rotate(45deg);
+  }
