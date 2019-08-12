@@ -86,6 +86,14 @@ pre {
 /* Text-level semantics
    ========================================================================== */
 /**
+ * Remove margin and padding from ul
+ */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+
+/**
  * Remove the gray background on active links in IE 10.
  */
 a {
@@ -336,9 +344,7 @@ html {
   background: #DBDBDB; }
 
 body {
-  position: relative;
-  width: 100%;
-  max-width: 75em; }
+  position: relative; }
 
 header {
   height: 100px;
@@ -351,7 +357,8 @@ header {
 
 main {
   max-width: 1200px;
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
 
 nav {
   padding-top: 6em; }
@@ -368,6 +375,68 @@ h2,
 h3 {
   margin: 0;
   padding: 0; }
+
+.base__grid--container {
+  display: grid;
+  min-height: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto 1fr auto;
+  grid-template-areas: "header" "nav" "main" "footer"; }
+  @media (min-width: 768px) {
+    .base__grid--container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: "header header header" "main main main" "footer footer footer"; } }
+
+header {
+  grid-area: header; }
+
+nav {
+  grid-area: nav; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
+.nav__bar {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  transform: translateY(-8500px);
+  transition: transform .7s ease-in; }
+  @media (min-width: 768px) {
+    .nav__bar {
+      width: 300px; } }
+
+.show__nav {
+  transform: translateY(0px);
+  transition: transform .7s ease-in; }
+
+.nav__wrapper {
+  background: #070c2a;
+  font-size: 1.8em;
+  text-align: center; }
+
+.nav__item {
+  padding: 2em 0; }
+  .nav__item:hover {
+    background: #132279; }
+
+.nav__link {
+  text-transform: uppercase;
+  text-decoration: none; }
+  .nav__link {
+    color: #DBDBDB; }
+    .nav__link:visited {
+      color: #DBDBDB; }
+    .nav__link:hover {
+      color: #FFBF00; }
+    .nav__link:active, .nav__link:focus {
+      color: #FFBF00; }
 
 .title__primary {
   font-size: 1.3em;
@@ -393,7 +462,7 @@ h3 {
   word-spacing: 1px;
   text-align: center; }
 
-.flex__container {
+.nav__container {
   display: flex;
   align-items: center; }
 

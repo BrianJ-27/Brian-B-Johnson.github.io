@@ -26,9 +26,9 @@ $bubblegum: #EEC1BE;
 
 /*-----Functional Color Variables-----*/
 $color-main: $deep-koamaru;
-$color-main-light: lighten($color-main, 25%);
+$color-main-light: lighten($color-main, 3%);
 $color-main-lightest: lighten($color-main, 50%);
-$color-main-dark: darken($color-main, 25%);
+$color-main-dark: darken($color-main, 15%);
 $color-secondary: $silver-surfer;
 $color-accent: $sunflower;
 
@@ -38,9 +38,9 @@ $color-shadow: rgba($black, .8);
 
 //Link colors
 $color-link-default: $silver-surfer;
-$color-link-active: $color-main-light;
+$color-link-active: $sunflower;
 $color-link-hover: $sunflower;
-$color-link-visited: $sunflower;
+$color-link-visited: $silver-surfer;
 
 //Border Colors
 $color-border-light: $color-accent;

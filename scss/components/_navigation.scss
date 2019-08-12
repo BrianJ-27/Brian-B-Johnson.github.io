@@ -1,0 +1,41 @@
+.nav__bar{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    transform: translateY(-8500px);
+    transition: transform .7s ease-in;
+    @include mq ('md'){
+        width: 300px;
+    }
+}
+
+ .show__nav{
+     transform: translateY(0px);
+     transition: transform .7s ease-in;
+ }
+
+.nav__wrapper{
+    background: $color-main-dark;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.nav__item{
+    padding: 2em 0;
+    &:hover{
+        background: $color-main-light;
+    }
+}
+
+
+.nav__link{
+    @include link_styles($link:$color-link-default, 
+                         $visited:$color-link-visited, 
+                         $hover:$color-link-hover,
+                         $active:$color-link-active
+                         );
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
