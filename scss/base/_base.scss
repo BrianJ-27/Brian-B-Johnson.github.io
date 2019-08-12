@@ -8,6 +8,7 @@ html{
 
 body{
     position: relative;
+    font-family: $font-stack-montserrat;
 }
 
 header{
@@ -21,6 +22,7 @@ header{
 }
 
 main{
+    padding-top: 6.2em;
     max-width: $max-width;
     width: 100%;
     margin: 0 auto; 

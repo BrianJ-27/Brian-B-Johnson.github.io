@@ -1,4 +1,4 @@
-const menu = document.querySelector(".hamburger-menu");
+const menu = document.querySelector("body");
 const navBar = document.querySelector(".nav__bar");
 
 

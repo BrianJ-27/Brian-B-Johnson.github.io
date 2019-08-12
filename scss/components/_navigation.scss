@@ -1,28 +1,36 @@
+.header__container{
+    z-index: 3;
+    @include flex_me($vertAlign:center);
+}
+
 .nav__bar{
-    height: 100%;
-    width: 100%;
-    position: absolute;
+    z-index: 2;
+    position:fixed;
     right: 0;
-    transform: translateY(-8500px);
-    transition: transform .7s ease-in;
+    width: 200px;
+    margin-top: -1033px;
+    transition: margin-top .7s ease-in;
     @include mq ('md'){
-        width: 300px;
+        width: 200px;
     }
 }
 
  .show__nav{
-     transform: translateY(0px);
-     transition: transform .7s ease-in;
+    margin-top: 0;
+    transition: margin-top .5s ease-out;
  }
 
 .nav__wrapper{
     background: $color-main-dark;
-    font-size: 1.8em;
-    text-align: center;
+    border-radius: 0 0 0 25px;
+    @include flex_me($dir:column);
 }
 
 .nav__item{
-    padding: 2em 0;
+    width: 58%;
+    margin: 0 auto auto 84px;
+    padding: 1em 0;
+    align-self: center;
     &:hover{
         background: $color-main-light;
     }

@@ -6,42 +6,42 @@
 
 // }
 
-.base__grid--container{
-    display: grid;
-    min-height: 100%;
-    grid-template-columns: 100%; 
-    grid-template-rows: auto auto 1fr auto;
-    grid-template-areas:
-    "header"
-    "nav" 
-    "main"
-    "footer";
-    @include mq('md'){
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); 
-        grid-template-areas:
-        "header header header"
-        "main main main"
-        "footer footer footer"
-        ; 
-  }    
-}
+// .base__grid--container{
+//     display: grid;
+//     min-height: 100%;
+//     grid-template-columns: 100%; 
+//     grid-template-rows: auto auto 1fr auto;
+//     grid-template-areas:
+//     "header"
+//     "nav" 
+//     "main"
+//     "footer";
+//     @include mq('md'){
+//         width: 100%;
+//         display: grid;
+//         grid-template-columns: repeat(3, 1fr); 
+//         grid-template-areas:
+//         "header header header"
+//         "main main main"
+//         "footer footer footer"
+//         ; 
+//   }    
+// }
 
-// Grid Area Items
-header {
-    grid-area: header;
-}
+// // Grid Area Items
+// header {
+//     grid-area: header;
+// }
 
-nav {
-    grid-area: nav;
-}
+// nav {
+//     grid-area: nav;
+// }
 
-main {
-    grid-area: main;
+// main {
+//     grid-area: main;
     
-}
-footer {
-    grid-area: footer;
+// }
+// footer {
+//     grid-area: footer;
     
-}
+// }
