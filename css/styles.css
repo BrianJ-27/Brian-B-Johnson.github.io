@@ -399,7 +399,7 @@ h3 {
   z-index: 2;
   position: fixed;
   right: 0;
-  width: 200px;
+  width: 205px;
   margin-top: -1033px;
   transition: margin-top .7s ease-in; }
   @media (min-width: 768px) {
@@ -417,10 +417,9 @@ h3 {
   flex-direction: column; }
 
 .nav__item {
-  width: 58%;
-  margin: 0 auto auto 84px;
-  padding: 1em 0;
-  align-self: center; }
+  display: flex;
+  width: 100%;
+  padding: 1.8em; }
   .nav__item:hover {
     background: #132279; }
 
@@ -435,6 +434,12 @@ h3 {
       color: #FFBF00; }
     .nav__link:active, .nav__link:focus {
       color: #FFBF00; }
+
+.nav__icon {
+  fill: #FFBF00;
+  width: 20px;
+  height: 20px;
+  margin-right: 1em; }
 
 .title__primary {
   font-size: 1.28em;
@@ -483,6 +488,16 @@ h3 {
   width: 125px;
   border: 1px solid #111E6C;
   border-radius: 50%; }
+
+#banner {
+  position: relative; }
+
+.bg__overlay {
+  background: rgba(255, 255, 255, 0.4);
+  width: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%; }
 
 .nav__container {
   display: flex;

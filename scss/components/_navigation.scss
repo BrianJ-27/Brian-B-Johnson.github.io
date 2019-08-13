@@ -7,7 +7,7 @@
     z-index: 2;
     position:fixed;
     right: 0;
-    width: 200px;
+    width: 205px;
     margin-top: -1033px;
     transition: margin-top .7s ease-in;
     @include mq ('md'){
@@ -27,15 +27,13 @@
 }
 
 .nav__item{
-    width: 58%;
-    margin: 0 auto auto 84px;
-    padding: 1em 0;
-    align-self: center;
+    @include flex_me();
+    width: 100%;
+    padding: 1.8em;
     &:hover{
         background: $color-main-light;
     }
 }
-
 
 .nav__link{
     @include link_styles($link:$color-link-default, 
@@ -45,5 +43,12 @@
                          );
     text-transform: uppercase;
     text-decoration: none;
+}
+
+.nav__icon{
+        fill: $color-accent;
+        width: 20px;
+        height: 20px;  
+        margin-right: 1em;
 }
 
