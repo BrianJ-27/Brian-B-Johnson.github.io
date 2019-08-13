@@ -4,20 +4,28 @@
 }
 
 .hex-icon{
-    padding: .5em 1em 1em 1em;
-    width: 95px;
-    height: 95px;
+  padding: .5em;
+  width: 83px;
+  height: 83px;
+  @include mq('lg'){
+    padding: 1em 3em 1em 1em;
+    width: 140px;
+    height: 140px;
+  }
 }
     //the 3 horizontal hamburger lines
     .line{
     position: absolute;
-    margin-left: 32px;
-    top: 43px;
+    margin-left: 26px;
+    top: 48px;
     height: 3px;
     width: 35px;
     background: $white;
     border-radius: 12px;
     transition: all 0.3s ease;
+    @include mq('lg'){
+      margin-left: 38px;
+    }
   }
   
   //The first horizontal hamburger line
@@ -35,8 +43,11 @@
   //when clicked the 1st line turns and shifts clockwise
   .change .line1{
     transform: translateY(5px) rotate(-45deg) scale(1.2);
-    margin-top: -5px;
-    margin-left: 32px;
+    margin-top: -6px;
+    margin-left: 26px;
+    @include mq('lg'){
+      margin-left: 39px;
+    }
 
   }
   
@@ -48,6 +59,9 @@
   //when clicked the 3rd line turns and shifts clockwise forming the X look
   .change .line3{
     transform: translateY(5px) rotate(45deg) scale(1.2);
-    margin-top: -5px;
-    margin-left: 32px;
+    margin-top: -6px;
+    margin-left: 26px;
+    @include mq('lg'){
+      margin-left: 39px;
+    }
   }

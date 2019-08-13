@@ -1,4 +1,4 @@
-const menu = document.querySelector("body");
+const menu = document.querySelector("header");
 const navBar = document.querySelector(".nav__bar");
 
 

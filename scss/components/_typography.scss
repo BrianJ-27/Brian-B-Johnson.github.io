@@ -1,22 +1,47 @@
 .title__primary{
-    @include text-prop($size:1.3em, $f-weight:400, $color:$color-text-light);
-    padding: .5em;
+    @include text-prop($size:1.28em, $f-weight:400, $color:$color-text-light);
+    padding: .7em .7em 1em;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 1px;
     margin-right: auto;
-    padding-right: 1em;
+    text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 
+                 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 
+                 0 4px 0 #282828, 0 5px 0 #262626, 
+                 0 6px 0 #242424, 0 7px 0 #222, 0 8px 
+                 0 #202020, 0 9px 0 #1e1e1e, 0 10px 
+                 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 
+                 0 #181818, 0 13px 0 #161616, 0 14px 
+                 0 #141414, 0 15px 0 #121212, 
+                 0 22px 30px rgba(0,0,0,0.9);
+    
+color: #FFFFFF;
     @include mq('md'){
-        margin-top: 1em;
         letter-spacing: 2px;
-        @include text-prop($size:1.6em, $f-weight:600);
+        @include text-prop($size:2.5em, $f-weight:600);
+    }
+    @include mq('lg'){
+        letter-spacing: 2px;
+        @include text-prop($size:2.8em);
     }
 }
 
 .title__secondary{
+    @include text-prop($size:1.4em, $f-weight:500, $color:$color-main-dark);
+    @include flex_me($just:center, $vertAlign: center);
     padding: .5em;
     text-transform: uppercase;
     letter-spacing: 1px;
     word-spacing: 1px;
     text-align: center;
+    &::after{
+        content: "\003e";
+        color: $color-accent;
+        font-size: 2em;
+    }
+    &::before{
+        color: $color-accent;
+        content: "\003c";
+        font-size: 2em;
+    }
 }

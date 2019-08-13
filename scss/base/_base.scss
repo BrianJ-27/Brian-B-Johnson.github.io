@@ -26,19 +26,30 @@ main{
     max-width: $max-width;
     width: 100%;
     margin: 0 auto; 
+    background: $white;
+}
+
+section:nth-child(1n+3){
+    padding: 3em 1em 0 1em;
 }
 
 nav{
     padding-top: 6em;
 }
 
-h1::after{
+h1::after,
+h1::before{
     display: block;
     height: 2px;
     background-color: $color-accent;
     content: " ";
-
-    margin: .2em 0 1em .0em;
+    width: 100px;
+    margin: .6em auto .25em auto;
+    @include mq('md'){
+        width: 250px;
+        margin-top: .35em;
+        margin-bottom: .1em;
+    }
 }
     
 

@@ -9,4 +9,6 @@
 }
 .img__person{
     @extend %ctr-img;
+    @include roundy($dim:125px, $border: 1px solid $color-border-dark);
+    
 }
