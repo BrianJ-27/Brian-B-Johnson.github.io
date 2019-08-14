@@ -32,16 +32,31 @@ main{
     background: $white;
 }
 
-// section:nth-child(1n+3){
-//     padding: 3em 1em 0 1em;
-// }
+section{
+    border-bottom: 2px solid $grey;
+}
+
+figcaption{
+    position: relative;
+    border-top: 2px solid $color-border-dark;
+    background: $color-main-dark;
+    color: $color-text-light;
+    font-weight: bolder;
+    line-height: 1.4;
+}
 
 nav{
     padding-top: 6em;
 }
 
-h1::after,
-h1::before{
+p{
+    text-align: left; 
+    padding: 0 1em;
+}
+
+h1::after
+// h1::before
+{
     display: block;
     height: 2px;
     background-color: $color-accent;
@@ -62,7 +77,8 @@ h3{
     padding: 0;
 }
 
-h2{
-    background-image: radial-gradient($silver-surfer 40%, $color-main 80%);
+h2:first-child{
+    // background-image: radial-gradient($white 40%, $color-main 80%); 
+    // width: 100%;
 }
 

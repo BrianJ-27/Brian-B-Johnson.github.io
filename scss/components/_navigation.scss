@@ -26,7 +26,7 @@
 
 //main nav <li> styles
 .nav__wrapper{
-    background: $color-main-dark;
+    background: rgba($color-main-dark, .7);
     border-radius: 0 0 0 25px;
     @include flex_me($dir:column);
 }
