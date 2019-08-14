@@ -1,3 +1,7 @@
+// **************************************
+// TYPOGRAPHY STYLES
+// **************************************
+
 .title__primary{
     @include text-prop($size:1.28em, $f-weight:400, $color:$color-text-light);
     padding: .7em .7em 1em;
