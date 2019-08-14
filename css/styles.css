@@ -586,10 +586,10 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5);
-  width: 90%;
+  position: relative;
+  background: #DBDBDB;
+  width: 80%;
   margin: 1em auto;
-  padding: 1em;
-  border: 2px solid #111E6C; }
+  border: 1px solid #111E6C; }
 
 /*# sourceMappingURL=styles.css.map */

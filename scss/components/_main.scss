@@ -23,9 +23,9 @@
 
 .card{
   @include flex_me($dir:column, $vertAlign: center);
-  background: $color-shadow;  
-  width: 90%;
+  position: relative;
+  background:$color-secondary;  
+  width: 80%;
   margin: 1em auto;  
-  padding: 1em;
-  border: 2px solid $color-border-dark;
+  border: 1px solid $color-border-dark;
 }

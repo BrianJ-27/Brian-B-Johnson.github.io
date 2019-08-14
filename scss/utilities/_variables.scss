@@ -26,7 +26,7 @@ $bubblegum: #EEC1BE;
 
 /*-----Functional Color Variables-----*/
 $color-main: $deep-koamaru;
-$color-main-transparent: rgba($deep-koamaru, .7);
+$color-main-transparent: rgba($deep-koamaru, .3);
 $color-main-light: lighten($color-main, 3%);
 $color-main-lightest: lighten($color-main, 50%);
 $color-main-dark: darken($color-main, 15%);
