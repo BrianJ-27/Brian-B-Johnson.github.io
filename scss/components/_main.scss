@@ -18,3 +18,14 @@
 .bio__wrapper{
     padding: 0 1em;
 }
+
+//Project Card Styles
+
+.card{
+  @include flex_me($dir:column, $vertAlign: center);
+  background: $color-shadow;  
+  width: 90%;
+  margin: 1em auto;  
+  padding: 1em;
+  border: 2px solid $color-border-dark;
+}

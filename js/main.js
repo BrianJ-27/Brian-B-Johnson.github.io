@@ -7,6 +7,8 @@ menu.addEventListener('click', () => {
     navBar.classList.toggle("show__nav");
 });
 
-// $('.nav__bar').on('click', function(){
-//     console.log('navbar was selected');
-// });
+$('.bio__wrapper').hide()
+
+$('.title__secondary').on('click', function(){
+    $('.bio__wrapper').slideDown(2000);
+})
