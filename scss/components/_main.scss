@@ -1,0 +1,18 @@
+
+//banner image overlay styles
+#banner{
+    position: relative;
+}
+
+.bg__overlay{
+   background: rgba($white, .4);
+   position: absolute; 
+   width: 45%;
+    top: 2%;
+    left: 54%;
+   border-radius: 15px;
+}
+
+.bio__wrapper{
+    padding: 0 1em;
+}

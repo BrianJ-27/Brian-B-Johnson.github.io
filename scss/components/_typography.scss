@@ -15,7 +15,7 @@
                  0 #141414, 0 15px 0 #121212, 
                  0 22px 30px rgba(0,0,0,0.9);
     
-color: #FFFFFF;
+    color: #FFFFFF;
     @include mq('md'){
         letter-spacing: 2px;
         @include text-prop($size:2.5em, $f-weight:600);
@@ -27,7 +27,7 @@ color: #FFFFFF;
 }
 
 .title__secondary{
-    @include text-prop($size:1.4em, $f-weight:500, $color:$color-main-dark);
+    @include text-prop($size:1em, $f-weight:bolder, $color:$color-main-dark);
     @include flex_me($just:center, $vertAlign: center);
     padding: .5em;
     text-transform: uppercase;
@@ -44,4 +44,28 @@ color: #FFFFFF;
         content: "\003c";
         font-size: 2em;
     }
+    @include mq('md'){
+        @include text-prop($size:1.5em);
+    }
+}
+
+
+/*----CONTEXT STYLES----*/
+
+.content__banner{
+    padding-left: .5em;
+    @include text-prop($size:.6em, $f-weight:800, $color: $color-main-dark);
+    text-transform: uppercase;
+    text-align: justify;
+    @include mq('md'){
+        @include text-prop($size:1.4em, $f-weight:bold);
+    }
+    @include mq('lg'){
+        @include text-prop($size:1.8em, $f-weight:900);
+    }
+}
+
+.content__bio{
+    text-align: justify;
+    line-height: 1.3;
 }

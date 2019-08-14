@@ -29,9 +29,9 @@ main{
     background: $white;
 }
 
-section:nth-child(1n+3){
-    padding: 3em 1em 0 1em;
-}
+// section:nth-child(1n+3){
+//     padding: 3em 1em 0 1em;
+// }
 
 nav{
     padding-top: 6em;
@@ -52,11 +52,14 @@ h1::before{
     }
 }
     
-
 h1,
 h2,
 h3{
     margin: 0;
     padding: 0;
+}
+
+h2{
+    background-image: radial-gradient($silver-surfer 40%, $color-main 80%);
 }
 
