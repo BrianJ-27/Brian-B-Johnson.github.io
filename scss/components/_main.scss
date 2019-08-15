@@ -4,14 +4,33 @@
 //banner image overlay styles
 #banner{
     position: relative;
+    z-index: 1;
+      &::after{
+          bottom: 0;
+          transform: skewY(-1.5deg)
+      }
 }
+
+#banner::after{
+    background: inherit;
+    content: '';
+    display: block;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    -webkit-backface-visibility: hidden;
+}
+
+
 
 .bg__overlay{
    background: rgba($white, .4);
    position: absolute; 
    width: 45%;
-    top: 2%;
-    left: 54%;
+    top: 50%;
+    left: 50%;
    border-radius: 15px;
 }
 
@@ -52,8 +71,9 @@
 
 .card__overlay,
 .img__card,
-figcaption{
-  transition: transform .6s ease-out;
+figcaption,
+.project__title{
+  transition: transform .8s ease-out;
 }
 
 .card__overlay{

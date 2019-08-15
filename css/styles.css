@@ -611,14 +611,29 @@ h3 {
       margin-left: 39px; } }
 
 #banner {
-  position: relative; }
+  position: relative;
+  z-index: 1; }
+  #banner::after {
+    bottom: 0;
+    transform: skewY(-1.5deg); }
+
+#banner::after {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  -webkit-backface-visibility: hidden; }
 
 .bg__overlay {
   background: rgba(255, 255, 255, 0.4);
   position: absolute;
   width: 45%;
-  top: 2%;
-  left: 54%;
+  top: 50%;
+  left: 50%;
   border-radius: 15px; }
 
 .bio__wrapper {
@@ -656,8 +671,9 @@ h3 {
 
 .card__overlay,
 .img__card,
-figcaption {
-  transition: transform .6s ease-out; }
+figcaption,
+.project__title {
+  transition: transform .8s ease-out; }
 
 .card__overlay {
   transform: translateY(-100%);

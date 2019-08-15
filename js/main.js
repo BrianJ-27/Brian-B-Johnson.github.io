@@ -7,8 +7,8 @@ menu.addEventListener('click', () => {
     navBar.classList.toggle("show__nav");
 });
 
-$('.bio__wrapper').hide()
+// $('.bio__wrapper').hide()
 
-$('.title__secondary').on('click', function(){
-    $('.bio__wrapper').slideDown(2000);
-})
+// $('.title__secondary').on('click', function(){
+//     $('.bio__wrapper').slideDown(2000);
+// })
