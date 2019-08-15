@@ -17,3 +17,21 @@
     top: 0;
     right: 0;
 }
+
+.btn__overlay{
+    background: transparent;
+    outline: none;
+    border: 3px solid $color-main;
+    color: $color-main;
+    text-transform: uppercase;
+    margin-bottom: 1.5em; 
+    width: 70%;
+    font-size: 1.2em;
+    font-weight: 900;
+    padding: 8px;
+    letter-spacing: .5px;
+    &:hover{
+        background: $color-main; 
+        color: $white;
+    }
+}

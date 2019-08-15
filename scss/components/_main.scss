@@ -23,6 +23,7 @@
 
 .card{
   @include flex_me($dir:column, $vertAlign: center);
+  overflow: hidden;
   position: relative;
   background:$color-bg-light;  
   width: 80%;
@@ -32,9 +33,11 @@
 }
 
 .card__overlay{
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0%;
-  background: rgba($color-main, .6); 
+  background: rgba($white, .6); 
   // display: flex;
   // flex-direction: column;
   // align-items: center;
@@ -43,6 +46,27 @@
   // height: 100%;
   // color: white;
 }
+
+.card__overlay,
+.img__card,
+figcaption{
+  transition: transform .6s ease-out;
+}
+
+.card__overlay{
+  transform: translateY(-100%);
+  @include flex_me($dir:column, $just:center, $vertAlign:center);
+}
+
+.card:hover .card__overlay{
+    transform: translateY(0);
+}
+
+.card:hover .img__card,
+.card:hover figcaption{
+  transform: translateY(125%);
+}
+
 
 .project__title{
   padding: 1em 0;
