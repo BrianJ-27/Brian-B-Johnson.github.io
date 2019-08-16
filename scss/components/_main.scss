@@ -55,7 +55,7 @@
 }
 
 .card li{
-    margin-bottom: 1em;
+    margin-bottom: .5em;
     text-transform: uppercase;
     text-align: center;
 }
@@ -70,24 +70,24 @@
 }
 
 .card__overlay,
-.img__card,
-.project__title,
+.card-img-top,
 figcaption{
   transition: transform .8s ease-out;
 }
 
 .card__overlay{
-  transform: translateY(-100%);
+  transform: translateX(-100%);
   @include flex_me($dir:column, $just:center, $vertAlign:center);
 }
 
-.card:hover .card__overlay{
-    transform: translateY(0);
+.card:hover .card__overlay,
+.card:hover figcaption{
+    transform: translateX(0);
 }
 
-.card:hover .img__card,
+.card:hover .card-img-top,
 .card:hover figcaption{
-  transform: translateY(125%);
+  transform: translateX(100%);
 }
 
 .title__overlay{
@@ -95,6 +95,7 @@ figcaption{
     text-transform: uppercase;
 }
 
-.project__title{
-  padding: 1em 0;
+//References Styles
+#references{
+  padding: 0 1em;
 }

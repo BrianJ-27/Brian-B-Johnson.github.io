@@ -54,6 +54,12 @@ p{
     padding: 0 1em;
 }
 
+footer{
+    height: $footer-height;
+    background: $color-bg-darkest;
+    color: $color-text-light;
+}
+
 h1::after
 // h1::before
 {
@@ -77,8 +83,12 @@ h3{
     padding: 0;
 }
 
-h2:first-child{
-    // background-image: radial-gradient($white 40%, $color-main 80%); 
-    // width: 100%;
+// h2:first-child{
+//     // background-image: radial-gradient($white 40%, $color-main 80%); 
+//     // width: 100%;
+// }
+
+h6{
+    color: $color-main;
 }
 
