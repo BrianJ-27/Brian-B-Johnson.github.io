@@ -9,10 +9,17 @@
 }
 .card-img-top{
     @extend %ctr-img;
+    max-height: 300px;
 }
 .img__person{
     @extend %ctr-img;
     @include roundy($dim:125px, $border: 1px solid $color-border-dark);
     
+}
+
+.footer__icons{
+    width: 100px;
+    height: 100px;
+    padding: 1em;
 }
 

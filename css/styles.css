@@ -405,10 +405,6 @@ main {
   background: #fff;
 }
 
-section {
-  border-bottom: 2px solid #878787;
-}
-
 figcaption {
   position: relative;
   border-top: 2px solid #111E6C;
@@ -416,6 +412,7 @@ figcaption {
   color: #fff;
   font-weight: bolder;
   line-height: 1.4;
+  padding: 1em;
 }
 
 nav {
@@ -458,6 +455,25 @@ h3 {
 
 h6 {
   color: #111E6C;
+}
+
+.grid__row--card {
+  display: grid;
+  min-height: 100%;
+  grid-template-columns: 100%;
+  grid-gap: 1em;
+  grid-template-rows: auto auto 1fr auto;
+}
+@media (min-width: 768px) {
+  .grid__row--card {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .grid__row--card {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .header__container {
@@ -626,11 +642,21 @@ h6 {
   color: #fff;
 }
 
+.card-img-top {
+  max-height: 300px;
+}
+
 .img__person {
   height: 125px;
   width: 125px;
   border: 1px solid #111E6C;
   border-radius: 50%;
+}
+
+.footer__icons {
+  width: 100px;
+  height: 100px;
+  padding: 1em;
 }
 
 .nav__container {

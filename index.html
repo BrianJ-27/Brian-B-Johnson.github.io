@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,500,500i,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Brian's Digital Portfolio</title>
@@ -141,176 +141,147 @@
 
         <section id="skills">
             <h2 class="title__secondary">Technical Skills</h2>
-            <figure>
-                <figcaption>
-                    <h3>Front End</h3><!--will add icon tool in css with psuedo after element-->
-                    <ul>
-                        <li>HTML5</li>         
-                        <li>CSS3</li>         
-                        <li>Javascript</li>   
-                        <li>Jquery</li>   
-                    </ul>
-                </figcaption>
-                <label for="90%">90%</label>
-                <input type="text" id="90%">
-                <label for="80%">80%</label>
-                <input type="text" id="90%">
-                <label for="70%">70%</label>
-                <input type="text" id="90%">
-                <label for="60%">60%</label>
-                <input type="text" id="90%">
-            </figure>
-            <figure>
-                <figcaption>
-                    <h3>Web Tools</h3><!--will add icon tool in css with psuedo after element-->
-                    <ul>
-                        <li>HTML5</li>         
-                        <li>CSS3</li>        
-                        <li>Javascript</li>   
-                        <li>Jquery</li> 
-                        <li>Sass</li> 
-                        <li>Bootstrap 4</li> 
-                    </ul>
-                </figcaption>
-                <label for="90%">90%</label>
-                <input type="text" id="90%">
-                <label for="80%">80%</label>
-                <input type="text" id="0%">
-                <label for="70%">60%</label>
-                <input type="text" id="70%">
-                <label for="60%">60%</label>
-                <input type="text" id="60%">
-                <label for="80%">80%</label>
-                <input type="text" id="90%">
-                <label for="60%">80%</label>
-                <input type="text" id="90%">
-            </figure>
+            
+               
+                    <h3>Front End</h3>
+                    
+                    <h3>Web Tools</h3>
+                 
+              
             
         </section>
 
         <section id="projects">
             <h2 class="title__secondary">Portfolio</h2>
-            <figure class="card">
-                <img class="card-img-top img-fluid" src="img/employee-directory_600.jpg" alt="8th project of Treehouse Techdegree">
-                <figcaption class="card-block">
-                   <h4 class="card-title"> Employee Directory:</h4>
-                    <p class="card-text">Used the fetch method to request 12 random users from a web API.
-                        Included Sass and advanced CSS techniques like CSS grid & flexbox.
-                    </p> 
-                </figcaption>
-                <div class="card__overlay">
-                    <p class="title__overlay">Web Technologies:</p>
-                    <ul>
-                        <li>Javascript</li>
-                        <li>Sass</li>
-                        <li>CSS3</li>
-                    </ul>
-                    <button class="btn__overlay">Live Preview</button>
-                    <button class="btn__overlay">Github</button>
-                </div>
-            </figure>
+            <div class="grid__row--card">
+                <figure class="card">
+                    <img class="card-img-top img-fluid" src="img/employee-directory_600.jpg"
+                        alt="8th project of Treehouse Techdegree">
+                    <figcaption class="card-block">
+                        <h4 class="card-title"> Employee Directory:</h4>
+                        <p class="card-text">Used the fetch method to request 12 random users from a web API.
+                                             Included Sass and CSS techniques like CSS grid & flexbox.
+                        </p>
+                    </figcaption>
+                    <div class="card__overlay">
+                        <p class="title__overlay">Web Technologies:</p>
+                        <ul>
+                            <li>Javascript</li>
+                            <li>Sass</li>
+                            <li>CSS3</li>
+                        </ul>
+                        <button class="btn__overlay">Live Preview</button>
+                        <button class="btn__overlay">Github</button>
+                    </div>
+                </figure>
 
-            <figure class="card">
-                <img class="card-img-top img-fluid" src="img/app-dashboard_600.jpg" alt="7th project of Treehouse Techdegree">
-                <figcaption class="card-block">
-                    <h4 class="card-title">Web App Dashboard:</h4>
-                    <p class="card-text">Created an interactive web app dashboard from scratch. Incorporated CSS Grid
-                        & Flexbox as well as (chart.js) to create tables, charts and graphics to add a pleasing UX/UI experience.
-                    </p>
-                </figcaption>
-                <div class="card__overlay">
-                    <p class="title__overlay">Web Technologies:</p>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>Jquery</li>
-                        <li>Sass</li>
-                        <li>CSS3</li>
-                    </ul>
-                    <button class="btn__overlay">Live Preview</button>
-                    <button class="btn__overlay">Github</button>
-                </div>
-            </figure>
-            <figure class="card">
-                <img class="card-img-top img-fluid" src="img/gameshow-app_600.jpg" alt="6th project of Treehouse Techdegree">
-                <figcaption class="card-block">
-                    <h4 class="card-title">Game Show App:</h4>
-                    <p class="card-text">Created a browser friendly word guessing game using pure JavaScript. Redesigned
-                        the game by using CSS transitions.
-                    </p>
-                </figcaption>
-                <div class="card__overlay">
-                    <p class="title__overlay">Web Technologies:</p>
-                    <ul>
-                        <li>JavaScript</li>
-                        <li>CSS3</li>
-                        <li>Sass</li>
-                    </ul>
-                    <button class="btn__overlay">Live Preview</button>
-                    <button class="btn__overlay">Github</button>
-                </div>
-            </figure>
+                <figure class="card">
+                    <img class="card-img-top img-fluid" src="img/app-dashboard_600.jpg"
+                        alt="7th project of Treehouse Techdegree">
+                    <figcaption class="card-block">
+                        <h4 class="card-title">Web App Dashboard:</h4>
+                        <p class="card-text">Created an interactive web app dashboard from scratch. Incorporated CSS
+                                             Grid & Flexbox & chart.js to create a pleasing UX/UI experience.
+                        </p>
+                    </figcaption>
+                    <div class="card__overlay">
+                        <p class="title__overlay">Web Technologies:</p>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>Jquery</li>
+                            <li>Sass</li>
+                            <li>CSS3</li>
+                        </ul>
+                        <button class="btn__overlay">Live Preview</button>
+                        <button class="btn__overlay">Github</button>
+                    </div>
+                </figure>
 
-            <figure class="card">   
-                <img class="card-img-top img-fluid" src="img/photogallery-app_600.jpg" alt="5th project of Treehouse Techdegree">
-                <figcaption class="card-block">
-                    <h4 class="card-title">Photo Gallery:</h4>
-                    <p class="card-text">Image galleries are an important feature of many websites. Showcased HTML5, CSS3, &
-                        JavaScript skills to create an interactive searchable image gallery.
-                    </p>
-                </figcaption>
-                <div class="card__overlay">
-                    <p class="title__overlay">Web Technologies:</p>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>Sass</li>
-                        <li>CSS3</li>
-                        <li>JavaScript</li>
-                    </ul>
-                    <button class="btn__overlay">Live Preview</button>
-                    <button class="btn__overlay">Github</button>
-                </div>
-            </figure>
+                <figure class="card">
+                    <img class="card-img-top img-fluid" src="img/gameshow-app_600.jpg"
+                        alt="6th project of Treehouse Techdegree">
+                    <figcaption class="card-block">
+                        <h4 class="card-title">Game Show App:</h4>
+                        <p class="card-text">Created a browser friendly word guessing game using pure JavaScript.
+                                             Redesigned the game by using CSS transitions.
+                        </p>
+                    </figcaption>
+                    <div class="card__overlay">
+                        <p class="title__overlay">Web Technologies:</p>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li>CSS3</li>
+                            <li>Sass</li>
+                        </ul>
+                        <button class="btn__overlay">Live Preview</button>
+                        <button class="btn__overlay">Github</button>
+                    </div>
+                </figure>
 
-            <figure class="card">
-                <img class="card-img-top img-fluid" src="img/style-guide_600.jpg" alt="8th project of Treehouse Techdegree">
-                <figcaption class="card-block">
-                    <h4 class="card-title">Web Style Guide:</h4>
-                    <p class="card-text">Created my own custom css framework that can be dropped into any projectto speed up
-                        styling, and layout and development as a whole.
-                    </p>
-                </figcaption>
-                <div class="card__overlay">
-                    <p class="title__overlay">Web Technologies:</p>
-                    <ul>
-                        <li>Sass</li>
-                        <li>CSS3</li>
-                    </ul>
-                    <button class="btn__overlay">Live Preview</button>
-                    <button class="btn__overlay">Github</button>
-                </div>
-            </figure>
+                <figure class="card">
+                    <img class="card-img-top img-fluid" src="img/photogallery-app_600.jpg"
+                        alt="5th project of Treehouse Techdegree">
+                    <figcaption class="card-block">
+                        <h4 class="card-title">Photo Gallery:</h4>
+                        <p class="card-text">Image galleries are an important feature of many websites. 
+                                             Showcased core  skills to create an interactive searchable image gallery.
+                        </p>
+                    </figcaption>
+                    <div class="card__overlay">
+                        <p class="title__overlay">Web Technologies:</p>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>Sass</li>
+                            <li>CSS3</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <button class="btn__overlay">Live Preview</button>
+                        <button class="btn__overlay">Github</button>
+                    </div>
+                </figure>
 
-            <figure class="card">
-                <img class="card-img-top img-fluid" src="img/aletta-bag_600.jpg" alt="8th project of Treehouse Techdegree">
-                <figcaption class="card-block">
-                    <h4 class="card-title">Aletta Bags:</h4>
-                    <p class="card-text">Wireframed, designed and developed a professional website from the ground up.
-                        Utilized various web technologies to launch my first independent website.
-                    </p>
-                </figcaption>
-                <div class="card__overlay">
-                    <p class="title__overlay">Web Technologies:</p>
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS3</li>
-                        <li>Sass</li>
-                        <li>JavaScript</li>
-                    </ul>
-                    <button class="btn__overlay">Live Preview</button>
-                    <button class="btn__overlay">Github</button>
-                </div>
-            </figure>
+                <figure class="card">
+                    <img class="card-img-top img-fluid" src="img/style-guide_600.jpg"
+                        alt="8th project of Treehouse Techdegree">
+                    <figcaption class="card-block">
+                        <h4 class="card-title">Web Style Guide:</h4>
+                        <p class="card-text">Created my own custom css framework that can be dropped into any project to
+                                             speed upstyling, and layout and development as a whole.
+                        </p>
+                    </figcaption>
+                    <div class="card__overlay">
+                        <p class="title__overlay">Web Technologies:</p>
+                        <ul>
+                            <li>Sass</li>
+                            <li>CSS3</li>
+                        </ul>
+                        <button class="btn__overlay">Live Preview</button>
+                        <button class="btn__overlay">Github</button>
+                    </div>
+                </figure>
 
+                <figure class="card">
+                    <img class="card-img-top img-fluid" src="img/aletta-bag_600.jpg"
+                        alt="8th project of Treehouse Techdegree">
+                    <figcaption class="card-block">
+                        <h4 class="card-title">Aletta Bags:</h4>
+                        <p class="card-text">Wireframed, designed and developed a professional website from inception.
+                                             Used various web technologies to launch my first independent website.
+                        </p>
+                    </figcaption>
+                    <div class="card__overlay">
+                        <p class="title__overlay">Web Technologies:</p>
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS3</li>
+                            <li>Sass</li>
+                            <li>JavaScript</li>
+                        </ul>
+                        <button class="btn__overlay">Live Preview</button>
+                        <button class="btn__overlay">Github</button>
+                    </div>
+                </figure>
+            </div>
         </section>
 
         <section id="references" class="team-section text-center my-5">
@@ -324,9 +295,7 @@
                         <p class="font-weight-normal dark-grey-text">
                            Brian is a dedicated developer committed to not just writing programs that work, 
                            but are focused on best practices, readability and expanding Brian’s knowledge 
-                           base. Coupled with a strong drive sharing what he has learned with others in 
-                           the community is what made him an easy choice for his role as a Slack Champion. 
-                           I can strongly recommend Brian as an asset to any development team. 
+                           base. I can strongly recommend Brian as an asset to any development team. 
                         </p>
                     </div>
             </article>
@@ -339,9 +308,7 @@
                         <p class="font-weight-normal dark-grey-text">
                            Brian is a dedicated developer committed to not just writing programs that work, 
                            but are focused on best practices, readability and expanding Brian’s knowledge 
-                           base. Coupled with a strong drive sharing what he has learned with others in 
-                           the community is what made him an easy choice for his role as a Slack Champion.  
-                           I can strongly recommend Brian as an asset to any development team. 
+                           base. I can strongly recommend Brian as an asset to any development team. 
                         </p>
                     </div>
             </article>
@@ -354,9 +321,7 @@
                         <p class="font-weight-normal dark-grey-text">
                            Brian is a dedicated developer committed to not just writing programs that work, 
                            but are focused on best practices, readability and expanding Brian’s knowledge 
-                           base. Coupled with a strong drive sharing what he has learned with others in 
-                           the community is what made him an easy choice for his role as a Slack Champion. 
-                           I can strongly recommend Brian as an asset to any development team. 
+                           base. I can strongly recommend Brian as an asset to any development team. 
                         </p>
                     </div>
                 </article>            
@@ -370,15 +335,51 @@
     <footer id="footer">
         <h2 class="title__secondary">Let's Get Connected</h2>
         <div>
-            <a href="mailto:johnson8727@hotmail.com"></a>
-            <a href="https://www.linkedin.com/in/brian-johnson-45161688/"></a>
+            <a href="mailto:johnson8727@hotmail.com" target="_blank">
+                    <svg class="footer__icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M496 112.011H272c-8.832 0-16 7.168-16 16s7.168 16 16 
+                                16h177.376l-98.304 76.448-70.496-44.832-17.152 27.008 
+                                80 50.88a15.915 15.915 0 0 0 8.576 2.496c3.456 0 
+                                6.944-1.12 9.824-3.36L480 160.715v207.296H272c-8.832 
+                                0-16 7.168-16 16s7.168 16 16 16h224c8.832 0 16-7.168 
+                                16-16v-256c0-8.832-7.168-16-16-16z" 
+                                fill="#1976d2"/>
+                        <path d="M282.208 19.691c-3.648-3.04-8.544-4.352-13.152-3.392l-256 
+                                48A15.955 15.955 0 0 0 0 80.011v352c0 7.68 5.472 14.304 
+                                13.056 15.712l256 48c.96.192 1.952.288 2.944.288 3.712 0 
+                                7.328-1.28 10.208-3.68a16.006 16.006 0 0 0 
+                                5.792-12.32v-448c0-4.768-2.112-9.28-5.792-12.32z" 
+                                fill="#2196f3"/>
+                        <path d="M144 368.011c-44.096 0-80-43.072-80-96s35.904-96 80-96 
+                                80 43.072 80 96-35.904 96-80 96zm0-160c-26.464 0-48 
+                                28.704-48 64s21.536 64 48 64 48-28.704 48-64-21.536-64-48-64z" 
+                                fill="#fafafa"/>
+                    </svg> 
+            </a>
+            <a href="https://www.linkedin.com/in/brian-johnson-45161688/" target="_blank">
+                <svg class="footer__icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382 382">
+                    <path d="M347.445 0H34.555C15.471 0 0 15.471 0 34.555v312.889C0 366.529 15.471 
+                         382 34.555 382h312.889C366.529 382 382 366.529 382 347.444V34.555C382 
+                         15.471 366.529 0 347.445 0zM118.207 329.844c0 5.554-4.502 10.056-10.056 
+                         10.056H65.345c-5.554 0-10.056-4.502-10.056-10.056V150.403c0-5.554 
+                         4.502-10.056 10.056-10.056h42.806c5.554 0 10.056 4.502 10.056 
+                         10.056v179.441zM86.748 123.432c-22.459 0-40.666-18.207-40.666-40.666S64.289 
+                         42.1 86.748 42.1s40.666 18.207 40.666 40.666-18.206 40.666-40.666 40.666zM341.91 
+                         330.654a9.247 9.247 0 0 1-9.246 9.246H286.73a9.247 9.247 0 0 1-9.246-9.246v-84.168c0-12.556 
+                         3.683-55.021-32.813-55.021-28.309 0-34.051 29.066-35.204 42.11v97.079a9.246 
+                         9.246 0 0 1-9.246 9.246h-44.426a9.247 9.247 0 0 1-9.246-9.246V149.593a9.247 
+                         9.247 0 0 1 9.246-9.246h44.426a9.247 9.247 0 0 1 9.246 9.246v15.655c10.497-15.753 
+                         26.097-27.912 59.312-27.912 73.552 0 73.131 68.716 73.131 106.472v86.846z" 
+                         fill="#0077b7"/>    
+                </svg>
+            </a>
         </div>
         <address>&copy; copyright 2019 brian johnson</address>
     </footer>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
 </html>

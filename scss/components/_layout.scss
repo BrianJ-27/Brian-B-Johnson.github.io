@@ -9,42 +9,19 @@
 
 // }
 
-// .base__grid--container{
-//     display: grid;
-//     min-height: 100%;
-//     grid-template-columns: 100%; 
-//     grid-template-rows: auto auto 1fr auto;
-//     grid-template-areas:
-//     "header"
-//     "nav" 
-//     "main"
-//     "footer";
-//     @include mq('md'){
-//         width: 100%;
-//         display: grid;
-//         grid-template-columns: repeat(3, 1fr); 
-//         grid-template-areas:
-//         "header header header"
-//         "main main main"
-//         "footer footer footer"
-//         ; 
-//   }    
-// }
+//Layed out card with CSS Grid 
+.grid__row--card{
+    display: grid;
+    min-height: 100%;
+    grid-template-columns: 100%; 
+    grid-gap: 1em;
+    grid-template-rows: auto auto 1fr auto;
+    @include mq('md'){
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr); 
+  } 
+  @include mq('lg'){
+    grid-template-columns: repeat(3, 1fr); 
+}   
+}
 
-// // Grid Area Items
-// header {
-//     grid-area: header;
-// }
-
-// nav {
-//     grid-area: nav;
-// }
-
-// main {
-//     grid-area: main;
-    
-// }
-// footer {
-//     grid-area: footer;
-    
-// }

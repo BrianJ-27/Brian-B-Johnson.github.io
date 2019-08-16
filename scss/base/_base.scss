@@ -32,9 +32,7 @@ main{
     background: $white;
 }
 
-section{
-    border-bottom: 2px solid $grey;
-}
+
 
 figcaption{
     position: relative;
@@ -43,6 +41,7 @@ figcaption{
     color: $color-text-light;
     font-weight: bolder;
     line-height: 1.4;
+    padding: 1em;
 }
 
 nav{
