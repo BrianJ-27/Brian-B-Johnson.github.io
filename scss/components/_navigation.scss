@@ -2,12 +2,12 @@
 // NAVIGATION STYLES
 // **************************************
 .header__container{
-    z-index: 3;
+    z-index: 500;
     @include flex_me($vertAlign:center);
 }
 
 .nav__bar{
-    z-index: 2;
+    z-index: 50;
     position:fixed;
     right: 0;
     width: 205px;

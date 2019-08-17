@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,500,500i,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Brian's Digital Portfolio</title>
@@ -103,18 +104,18 @@
 
     
     <main class="main__grid--container">
-            <section id="banner">
+            <div id="banner">
                 <img class="img__banner" src="img/Optimized-banner-image2.jpg" alt="Portfolio Banner Picture">
                 <div class="bg__overlay">
-                    <p class="content__banner">Hey! My name is Brian & I am an
-                                               aspiring front end developer</p>
+                    <!-- <p class="content__banner">Hey! My name is Brian & I am an
+                                               aspiring front end developer</p> -->
                     
                 </div>
-            </section>
-        
-            <section id="about__me">
+            </div>
+            
+            <section id="about__me" class="layout__container">
                 <article class="bio__wrapper">
-                    <h2 class="title__secondary">The Journey Here</h2>
+                    <h2 class="title__secondary title__bio">The Journey Here</h2>
                     <p class="content__bio">Why web design? I am motivated to switch careers into a profession
                         I find meaningful & impactful each day. The goal for me as a designer/
                         developer is to make your online presence memorable and visually stunning.
@@ -132,23 +133,33 @@
                         volunteering my time in bible education.
                     </p>
                 </article>
-                <article class="flex_col">
-                    <img class="img__bio" src="img/look-up-blue-lovers.jpg" alt="Biography Picture of Brian & Ally">
+                <article class="bio__img--wrapper">
+                    <img class="img__bio img-responsive image-resize" src="img/look-up-blue-lovers.jpg" alt="Biography Picture of Brian & Ally">
                 </article>
             
-            
+
             </section>
 
         <section id="skills">
+
             <h2 class="title__secondary">Technical Skills</h2>
-            
-               
+            <div class="row">
+                <div class="col-md-6">
                     <h3>Front End</h3>
-                    
-                    <h3>Web Tools</h3>
-                 
-              
+                    <div class="widget-container-half">
+                        <!-- element bar graph will attach to -->
+                        <canvas id="front-end" width="400" height="400"></canvas>
+                    </div>
+                </div>
             
+                <div class="col-md-6">
+                    <h3>Web Tools</h3>
+                    <div class="widget-container-half">
+                        <!-- element bar graph will attach to -->
+                        <canvas id="web-tools" width="400" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
@@ -327,53 +338,56 @@
                 </article>            
             </div>   
         </section>
+        <section>
+                <h2 class="title__secondary">Let's Get Connected</h2>
+                <div>
+                    <a href="mailto:johnson8727@hotmail.com" target="_blank">
+                            <svg class="footer__icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M496 112.011H272c-8.832 0-16 7.168-16 16s7.168 16 16 
+                                        16h177.376l-98.304 76.448-70.496-44.832-17.152 27.008 
+                                        80 50.88a15.915 15.915 0 0 0 8.576 2.496c3.456 0 
+                                        6.944-1.12 9.824-3.36L480 160.715v207.296H272c-8.832 
+                                        0-16 7.168-16 16s7.168 16 16 16h224c8.832 0 16-7.168 
+                                        16-16v-256c0-8.832-7.168-16-16-16z" 
+                                        fill="#1976d2"/>
+                                <path d="M282.208 19.691c-3.648-3.04-8.544-4.352-13.152-3.392l-256 
+                                        48A15.955 15.955 0 0 0 0 80.011v352c0 7.68 5.472 14.304 
+                                        13.056 15.712l256 48c.96.192 1.952.288 2.944.288 3.712 0 
+                                        7.328-1.28 10.208-3.68a16.006 16.006 0 0 0 
+                                        5.792-12.32v-448c0-4.768-2.112-9.28-5.792-12.32z" 
+                                        fill="#2196f3"/>
+                                <path d="M144 368.011c-44.096 0-80-43.072-80-96s35.904-96 80-96 
+                                        80 43.072 80 96-35.904 96-80 96zm0-160c-26.464 0-48 
+                                        28.704-48 64s21.536 64 48 64 48-28.704 48-64-21.536-64-48-64z" 
+                                        fill="#fafafa"/>
+                            </svg> 
+                    </a>
+                    <a href="https://www.linkedin.com/in/brian-johnson-45161688/" target="_blank">
+                        <svg class="footer__icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382 382">
+                            <path d="M347.445 0H34.555C15.471 0 0 15.471 0 34.555v312.889C0 366.529 15.471 
+                                 382 34.555 382h312.889C366.529 382 382 366.529 382 347.444V34.555C382 
+                                 15.471 366.529 0 347.445 0zM118.207 329.844c0 5.554-4.502 10.056-10.056 
+                                 10.056H65.345c-5.554 0-10.056-4.502-10.056-10.056V150.403c0-5.554 
+                                 4.502-10.056 10.056-10.056h42.806c5.554 0 10.056 4.502 10.056 
+                                 10.056v179.441zM86.748 123.432c-22.459 0-40.666-18.207-40.666-40.666S64.289 
+                                 42.1 86.748 42.1s40.666 18.207 40.666 40.666-18.206 40.666-40.666 40.666zM341.91 
+                                 330.654a9.247 9.247 0 0 1-9.246 9.246H286.73a9.247 9.247 0 0 1-9.246-9.246v-84.168c0-12.556 
+                                 3.683-55.021-32.813-55.021-28.309 0-34.051 29.066-35.204 42.11v97.079a9.246 
+                                 9.246 0 0 1-9.246 9.246h-44.426a9.247 9.247 0 0 1-9.246-9.246V149.593a9.247 
+                                 9.247 0 0 1 9.246-9.246h44.426a9.247 9.247 0 0 1 9.246 9.246v15.655c10.497-15.753 
+                                 26.097-27.912 59.312-27.912 73.552 0 73.131 68.716 73.131 106.472v86.846z" 
+                                 fill="#0077b7"/>    
+                        </svg>
+                    </a>
+                </div>
 
+
+        </section>
         
 
     </main>
 
     <footer id="footer">
-        <h2 class="title__secondary">Let's Get Connected</h2>
-        <div>
-            <a href="mailto:johnson8727@hotmail.com" target="_blank">
-                    <svg class="footer__icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path d="M496 112.011H272c-8.832 0-16 7.168-16 16s7.168 16 16 
-                                16h177.376l-98.304 76.448-70.496-44.832-17.152 27.008 
-                                80 50.88a15.915 15.915 0 0 0 8.576 2.496c3.456 0 
-                                6.944-1.12 9.824-3.36L480 160.715v207.296H272c-8.832 
-                                0-16 7.168-16 16s7.168 16 16 16h224c8.832 0 16-7.168 
-                                16-16v-256c0-8.832-7.168-16-16-16z" 
-                                fill="#1976d2"/>
-                        <path d="M282.208 19.691c-3.648-3.04-8.544-4.352-13.152-3.392l-256 
-                                48A15.955 15.955 0 0 0 0 80.011v352c0 7.68 5.472 14.304 
-                                13.056 15.712l256 48c.96.192 1.952.288 2.944.288 3.712 0 
-                                7.328-1.28 10.208-3.68a16.006 16.006 0 0 0 
-                                5.792-12.32v-448c0-4.768-2.112-9.28-5.792-12.32z" 
-                                fill="#2196f3"/>
-                        <path d="M144 368.011c-44.096 0-80-43.072-80-96s35.904-96 80-96 
-                                80 43.072 80 96-35.904 96-80 96zm0-160c-26.464 0-48 
-                                28.704-48 64s21.536 64 48 64 48-28.704 48-64-21.536-64-48-64z" 
-                                fill="#fafafa"/>
-                    </svg> 
-            </a>
-            <a href="https://www.linkedin.com/in/brian-johnson-45161688/" target="_blank">
-                <svg class="footer__icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382 382">
-                    <path d="M347.445 0H34.555C15.471 0 0 15.471 0 34.555v312.889C0 366.529 15.471 
-                         382 34.555 382h312.889C366.529 382 382 366.529 382 347.444V34.555C382 
-                         15.471 366.529 0 347.445 0zM118.207 329.844c0 5.554-4.502 10.056-10.056 
-                         10.056H65.345c-5.554 0-10.056-4.502-10.056-10.056V150.403c0-5.554 
-                         4.502-10.056 10.056-10.056h42.806c5.554 0 10.056 4.502 10.056 
-                         10.056v179.441zM86.748 123.432c-22.459 0-40.666-18.207-40.666-40.666S64.289 
-                         42.1 86.748 42.1s40.666 18.207 40.666 40.666-18.206 40.666-40.666 40.666zM341.91 
-                         330.654a9.247 9.247 0 0 1-9.246 9.246H286.73a9.247 9.247 0 0 1-9.246-9.246v-84.168c0-12.556 
-                         3.683-55.021-32.813-55.021-28.309 0-34.051 29.066-35.204 42.11v97.079a9.246 
-                         9.246 0 0 1-9.246 9.246h-44.426a9.247 9.247 0 0 1-9.246-9.246V149.593a9.247 
-                         9.247 0 0 1 9.246-9.246h44.426a9.247 9.247 0 0 1 9.246 9.246v15.655c10.497-15.753 
-                         26.097-27.912 59.312-27.912 73.552 0 73.131 68.716 73.131 106.472v86.846z" 
-                         fill="#0077b7"/>    
-                </svg>
-            </a>
-        </div>
         <address>&copy; copyright 2019 brian johnson</address>
     </footer>
 
@@ -381,5 +395,5 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </html>

@@ -11,6 +11,7 @@ html{
 
 body{
     position: relative;
+    overflow-x: hidden;
     font-family: $font-stack-montserrat;
 }
 
@@ -22,17 +23,19 @@ header{
     top:0;
     width: 100%;
     position: fixed;
+    z-index: 500;
 }
 
 main{
     padding-top: 6.2em;
-    max-width: $max-width;
     width: 100%;
+}
+
+section{
+    max-width: $max-width;
     margin: 0 auto; 
     background: $white;
 }
-
-
 
 figcaption{
     position: relative;
@@ -86,6 +89,10 @@ h3{
 //     // background-image: radial-gradient($white 40%, $color-main 80%); 
 //     // width: 100%;
 // }
+
+h3{
+    text-align: center;
+}
 
 h6{
     color: $color-main;

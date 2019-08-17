@@ -1,9 +1,11 @@
 // **************************************
 // LAYOUT STYLES
 // **************************************
-// .layout__container{
-    
-// }
+.layout__container{
+    @include mq('md'){
+       @include flex_me($wrap:wrap);
+    }  
+} 
 
 // .main__grid--container{
 

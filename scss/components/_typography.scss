@@ -31,7 +31,7 @@
 }
 
 .title__secondary{
-    @include text-prop($size:1em, $f-weight:bolder, $color:$color-main-dark);
+    @include text-prop($size:1.4em, $f-weight:bolder, $color:$color-main-dark);
     @include flex_me($just:center, $vertAlign: center);
     padding: .5em;
     text-transform: uppercase;
@@ -49,7 +49,7 @@
         font-size: 2em;
     }
     @include mq('md'){
-        @include text-prop($size:1.5em);
+        @include text-prop($size:1em, $l-height: 1.5);
     }
 }
 
@@ -69,7 +69,22 @@
     }
 }
 
+.title__bio{
+    position: relative;
+    top: -20px;
+    @include mq('md'){
+        top: 0;
+    }
+}
+
 .content__bio{
+    @include text-prop($size:1em, $l-height:1.3);
     text-align: justify;
-    line-height: 1.3;
+    @include mq('md'){
+        @include text-prop($size:.8em, $l-height:1.5);
+        padding-left: 2em;
+    }
+    @include mq('lg'){
+        @include text-prop($size:1em);
+    }
 }

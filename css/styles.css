@@ -346,6 +346,7 @@ html {
 
 body {
   position: relative;
+  overflow-x: hidden;
   font-family: "Montserrat", sans-serif; }
 
 header {
@@ -355,12 +356,15 @@ header {
   left: 0;
   top: 0;
   width: 100%;
-  position: fixed; }
+  position: fixed;
+  z-index: 500; }
 
 main {
   padding-top: 6.2em;
+  width: 100%; }
+
+section {
   max-width: 1200px;
-  width: 100%;
   margin: 0 auto;
   background: #fff; }
 
@@ -406,8 +410,16 @@ h3 {
   margin: 0;
   padding: 0; }
 
+h3 {
+  text-align: center; }
+
 h6 {
   color: #111E6C; }
+
+@media (min-width: 768px) {
+  .layout__container {
+    display: flex;
+    flex-wrap: wrap; } }
 
 .grid__row--card {
   display: grid;
@@ -424,12 +436,12 @@ h6 {
       grid-template-columns: repeat(3, 1fr); } }
 
 .header__container {
-  z-index: 3;
+  z-index: 500;
   display: flex;
   align-items: center; }
 
 .nav__bar {
-  z-index: 2;
+  z-index: 50;
   position: fixed;
   right: 0;
   width: 205px;
@@ -496,7 +508,7 @@ h6 {
       font-size: 2.8em; } }
 
 .title__secondary {
-  font-size: 1em;
+  font-size: 1.4em;
   font-weight: bolder;
   color: #070c2a;
   display: flex;
@@ -517,7 +529,8 @@ h6 {
     font-size: 2em; }
   @media (min-width: 768px) {
     .title__secondary {
-      font-size: 1.5em; } }
+      font-size: 1em;
+      line-height: 1.5; } }
 
 /*----CONTEXT STYLES----*/
 .content__banner {
@@ -536,9 +549,25 @@ h6 {
       font-size: 1.8em;
       font-weight: 900; } }
 
+.title__bio {
+  position: relative;
+  top: -20px; }
+  @media (min-width: 768px) {
+    .title__bio {
+      top: 0; } }
+
 .content__bio {
-  text-align: justify;
-  line-height: 1.3; }
+  font-size: 1em;
+  line-height: 1.3;
+  text-align: justify; }
+  @media (min-width: 768px) {
+    .content__bio {
+      font-size: 0.8em;
+      line-height: 1.5;
+      padding-left: 2em; } }
+  @media (min-width: 1024px) {
+    .content__bio {
+      font-size: 1em; } }
 
 .btn__overlay {
   background: transparent;
@@ -625,23 +654,11 @@ h6 {
     .change .line3 {
       margin-left: 39px; } }
 
-#banner {
-  position: relative;
-  z-index: 1; }
-  #banner::after {
-    bottom: 0;
-    transform: skewY(-1.5deg); }
+#about__me {
+  height: 100%; }
 
-#banner::after {
-  background: inherit;
-  content: '';
-  display: block;
-  height: 50%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  z-index: -1;
-  -webkit-backface-visibility: hidden; }
+#skills {
+  margin-top: 1.5em; }
 
 .bg__overlay {
   background: rgba(255, 255, 255, 0.4);
@@ -652,7 +669,55 @@ h6 {
   border-radius: 15px; }
 
 .bio__wrapper {
-  padding: 0 1em; }
+  position: relative;
+  width: 100%;
+  z-index: 5; }
+  @media (min-width: 768px) {
+    .bio__wrapper {
+      flex: 2 55%; } }
+  @media (min-width: 1024px) {
+    .bio__wrapper {
+      flex-basis: 60%; } }
+
+@media (min-width: 768px) {
+  .bio__img--wrapper {
+    flex: 1 45%; } }
+@media (min-width: 1024px) {
+  .bio__img--wrapper {
+    flex-basis: 40%; } }
+
+.bio__wrapper::before,
+.bio__wrapper::after {
+  position: absolute;
+  content: '';
+  background: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1; }
+
+.bio__wrapper::before {
+  transform-origin: top left;
+  transform: skewY(-10deg); }
+  @media (min-width: 768px) {
+    .bio__wrapper::before {
+      transform: skewY(0deg) skewX(10deg); } }
+
+.bio__wrapper::after {
+  transform-origin: top right;
+  transform: skewY(10deg); }
+  @media (min-width: 768px) {
+    .bio__wrapper::after {
+      transform: skewY(0deg); } }
+
+@media (min-width: 768px) {
+  .bio__img {
+    flex: 1 30%;
+    overflow: hidden; } }
 
 .card {
   display: flex;
