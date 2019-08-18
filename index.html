@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script> 
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,500,500i,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <title>Brian's Digital Portfolio</title>
@@ -144,21 +143,54 @@
 
             <h2 class="title__secondary">Technical Skills</h2>
             <div class="row">
-                <div class="col-md-6">
+
+                <div class="col-md-6 main">
                     <h3>Front End</h3>
-                    <div class="widget-container-half">
-                        <!-- element bar graph will attach to -->
-                        <canvas id="front-end" width="400" height="400"></canvas>
-                    </div>
+                    <figure class="progress-chart">
+                        <p class="progress-title">html5</p>
+                        <p class="progress-bars"></p>
+                        <p class="progress-value">95%</p>
+                    </figure>
+                    <figure class="progress-chart">
+                        <p class="progress-title">css3</p>
+                        <p class="progress-bars"></p>
+                        <p class="progress-value">90%</p>
+                    </figure>
+                    <figure class="progress-chart">
+                        <p class="progress-title">javascript</p>
+                        <p class="progress-bars"></p>
+                        <p class="progress-value">70%</p>
+                    </figure>
+                    <figure class="progress-chart">
+                        <p class="progress-title">bootstrap 4</p>
+                        <p class="progress-bars"></p>
+                        <p class="progress-value">80%</p>
+                    </figure>
                 </div>
-            
-                <div class="col-md-6">
+                <div class="col-md-6 main">
                     <h3>Web Tools</h3>
-                    <div class="widget-container-half">
-                        <!-- element bar graph will attach to -->
-                        <canvas id="web-tools" width="400" height="400"></canvas>
-                    </div>
+                    <figure class="progress-chart">
+                        <p class="progress-title">git</p>
+                        <p class="progress-bars"></p>
+                        <p class="progress-value">70%</p>
+                    </figure>
+                    <figure class="progress-chart">
+                        <p class="progress-title">github</p>
+                        <p class="progress-bars"></p>
+                        <p class="progress-value">60%</p>
+                    </figure>
+                    <figure class="progress-chart">
+                        <p class="progress-title">vscode</p>
+                        <p class="progress-bars"></p>
+                        <p class="progress-value">85%</p>
+                    </figure>
+                    <figure class="progress-chart">
+                        <p class="progress-title">adobe ps</p>
+                        <p class="progress-bars"></p>
+                        <p class="progress-value">80%</p>
+                    </figure>
                 </div>
+
             </div>
         </section>
 
@@ -298,7 +330,7 @@
         <section id="references" class="team-section text-center my-5">
             <h2 class="title__secondary">Recommendations</h2>
           <div class="row text-center">
-            <article class="reviews__wrapper col-md-4 mb-md-0 mb-5">
+            <article class="reviews__wrapper col-md-6 col-lg-4">
                 <div class="avatar mx-auto">
                         <img class="img__person rounded-circle z-depth-1 img-fluid" src="img/randy.jpg" alt="Picture of Randy Layne">
                         <h4 class="font-weight-bold dark-grey-text mt-4">Randy Layne</h4>
@@ -311,7 +343,7 @@
                     </div>
             </article>
 
-            <article class="reviews__wrapper col-md-4 mb-md-0 mb-5">
+            <article class="reviews__wrapper col-md-6 col-lg-4">
                     <div class="avatar mx-auto">
                         <img class="img__person rounded-circle z-depth-1 img-fluid" src="img/alicia.jpg" alt="Picture of Alicia Mendez">
                         <h4 class="font-weight-bold dark-grey-text mt-4">Alicia Mendez </h4>
@@ -324,7 +356,7 @@
                     </div>
             </article>
 
-            <article class="reviews__wrapper col-md-4 mb-md-0 mb-5">
+            <article class="reviews__wrapper col-md-12 col-lg-4">
                     <div class="avatar mx-auto">
                         <img class="img__person rounded-circle z-depth-1 img-fluid" src="img/nestor.png" alt="Picture of Nestor Padilla">
                         <h4 class="font-weight-bold dark-grey-text mt-4">Nestor Padilla</h4>
