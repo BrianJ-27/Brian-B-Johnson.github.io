@@ -7,53 +7,175 @@
 
 #skills{
   margin-top: 1.5em;
+  padding: 0 1em;
 }
 
-.main{
-  margin: 25px auto;
-  flex-basis: 90%;
+.skills{
+  @include mq('lg'){
+    flex-basis: 35%;
+    margin: 0 auto;
+  }
 }
 
-.progress-chart{
-  @include flex_me($dir:row, $just:space-around);
-  width: 100%;
-  height: 40px;
-  background: #eeeeee; 
-  margin-bottom: 20px;
+.skills li{
+  margin: 2em 0;
+  list-style-type: none;
+}
+
+.bar{
+  background: transparent;
   border-radius: 5px;
-  box-shadow: 0 1px 2px #222
+  display: block;
+  height: 19px;
+  border: 2px solid $color-main;
+  box-shadow: 0 1px 5px #333;
+  & span{
+    height: 15px;
+    float: left;
+    background: $color-accent;
+    border-radius: 5px;
+  }
 }
 
-.progress-title{
-  font-size: .8em;
-  width: 35%;
-  margin-right: auto;
-  height: 40px;
-  padding-left: 10px;
-  font-weight: bold;
-  text-transform: uppercase;
-  background: $color-main;
-  color: #fff;
-  line-height: 2.5;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 5px;
-  box-shadow: 2px 0 2px #333;
-  text-shadow: 1px 1px 1px #000;
-  z-index: 8;
+.html{
+  width: 90%;
+  animation: html 2s;
 }
 
-.progress-bars{
-  background: $color-accent;
-  padding: 0;
-  margin: 0;
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 90%;
+  }
 }
 
-.progress-value{
-  padding-right: 5px;
-  line-height: 2.5;
-  font-weight: bold;
-  color: #455a64;
-  z-index: 10;
+.css{
+  width: 80%;
+  animation: css 2s;
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 80%;
+  }
+}
+
+.js{
+  width: 65%;
+  animation: js 2s;
+}
+
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 65%;
+  }
+}
+
+
+.jquery{
+  width: 70%;
+  animation: jquery 2s;
+}
+
+@keyframes jquery {
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+
+.bootstrap{
+  width: 75%;
+  animation: bootstrap 2s;
+}
+
+@keyframes bootstrap {
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 75%;
+  }
+}
+
+.git{
+  width: 70%;
+  animation: git 2s;
+}
+
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 70%;
+  }
+}
+
+.github{
+  width: 50%;
+  animation: github 2s;
+}
+
+@keyframes github {
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 50%;
+  }
+}
+
+.vscode{
+  width: 85%;
+  animation: vscode 2s;
+}
+
+@keyframes vscode {
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+
+.adobe{
+  width: 65%;
+  animation: adobe 2s;
+}
+
+@keyframes adobe {
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 65%;
+  }
+}
+
+.mysql{
+  width: 50%;
+  animation: mysql 2s;
+}
+
+@keyframes mysql {
+  0% {
+    width: 0%;
+  }
+  100%{
+    width: 50%;
+  }
 }
 
 .bg__overlay{
@@ -138,11 +260,13 @@
   width: 80%;
   margin: 2em auto;  
   border-radius: 10px 10px 0 0;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   & ul{
      margin-bottom: 1em; 
   }
 }
+
+
 
 .card li{
     margin-bottom: .5em;

@@ -6,10 +6,6 @@ menu.addEventListener('click', () => {
     navBar.classList.toggle("show__nav");
 });
 
-$(document).ready(function(){
-    $('.progress-bars').animate({width:'90%'}, 2000);
-});
-
 
 // $('.bio__wrapper').hide()
 
