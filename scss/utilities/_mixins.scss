@@ -39,9 +39,12 @@ Important reminders:
       }
       &:hover {
           color: $hover;
+          background: $color-main-light;
+          text-decoration: none;
       }
       &:active, &:focus {
           color: $active;
+
       }
   }
 }

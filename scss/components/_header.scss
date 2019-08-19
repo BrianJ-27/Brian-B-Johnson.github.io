@@ -1,10 +1,12 @@
 // **************************************
 // HEADER STYLES
 // **************************************
-.nav__container{
-    @include flex_me($vertAlign:center);
+.header__container{
+  z-index: 500;
+  @include flex_me($vertAlign:center);
 }
 
+//hexagon icon styles for mobile and tablet but are not displayed in desktop view
 .hex-icon{
   padding: .5em;
   width: 83px;
@@ -13,8 +15,11 @@
     padding: 1em 3em 1em 1em;
     width: 140px;
     height: 140px;
+    display: none;
   }
 }
+
+//hamburger white line styles for mobile and tablet but are not displayed in desktop view
     //the 3 horizontal hamburger lines
     .line{
     position: absolute;
@@ -27,6 +32,7 @@
     transition: all 0.3s ease;
     @include mq('lg'){
       margin-left: 38px;
+      display: none;
     }
   }
   

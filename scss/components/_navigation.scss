@@ -1,11 +1,30 @@
 // **************************************
 // NAVIGATION STYLES
 // **************************************
-.header__container{
-    z-index: 500;
-    @include flex_me($vertAlign:center);
+
+//mobile nav container styles
+// .nav__container{
+//     @include flex_me($vertAlign:center);
+// }
+.header__nav--bar{
+    display: none;
+    @include mq('lg'){
+        display: block;
+        width: 100%;
+        height: inherit;
+    }
 }
 
+.header__nav--wrapper{
+    @include flex_me($just:flex-end, $vertAlign:center);
+    height: inherit;
+    width: 100%;
+}
+
+.header--nav__link{
+    padding: 2.39em 1em;
+}
+//nav styles 
 .nav__bar{
     z-index: 50;
     position:fixed;
@@ -16,15 +35,21 @@
     @include mq ('md'){
         width: 200px;
     }
+    @include mq ('lg'){
+        display: none;
+    }
 }
 
 
  .show__nav{
     margin-top: 0;
     transition: margin-top .5s ease-out;
+    @include mq('lg'){
+        display: none;
+    }
  }
 
-//main nav <li> styles
+//main nav <ul> styles
 .nav__wrapper{
     background: rgba($color-main-dark, .7);
     border-radius: 0 0 0 25px;
@@ -41,7 +66,8 @@
     }
 }
 
-//main nav link styles
+//mobile & tablet link styles
+.header--nav__link,
 .nav__link{
     @include link_styles($link:$color-link-default, 
                          $visited:$color-link-visited, 
@@ -51,6 +77,8 @@
     text-transform: uppercase;
     text-decoration: none;
 }
+
+
 
 // main nav SVG icons
 .nav__icon{
