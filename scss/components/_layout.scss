@@ -7,6 +7,10 @@
     }  
 } 
 
+.connect__wrapper{
+    @include flex_me($just:center);
+}
+
 // .main__grid--container{
 
 // }

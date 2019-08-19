@@ -1,3 +1,11 @@
 // **************************************
 // FOOTER STYLES
 // **************************************
+
+#footer{
+    @include flex_me($just:center, $vertAlign:flex-end);
+}
+
+#footer address{
+    text-transform: uppercase;
+}

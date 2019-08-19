@@ -412,6 +412,10 @@ h6 {
     display: flex;
     flex-wrap: wrap; } }
 
+.connect__wrapper {
+  display: flex;
+  justify-content: center; }
+
 .grid__row--card {
   display: grid;
   min-height: 100%;
@@ -917,5 +921,13 @@ figcaption {
   .col-lg-4:last-child {
     flex-basis: 50%;
     margin: 0 auto; } }
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+#footer address {
+  text-transform: uppercase; }
 
 /*# sourceMappingURL=styles.css.map */
