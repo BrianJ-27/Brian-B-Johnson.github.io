@@ -7,6 +7,22 @@ menu.addEventListener('click', () => {
 });
 
 
+window.sr = ScrollReveal({
+    distance : '50px',
+    easing   : 'ease-in-out',
+    mobile   : true,
+    delay    : 450,
+    reset    : false,
+    viewFactor: 0.1,
+  });
+  
+
+  sr.reveal('.skills',{
+    origin : 'left',  
+  });
+
+  
+
 // $('.bio__wrapper').hide()
 
 // $('.title__secondary').on('click', function(){
