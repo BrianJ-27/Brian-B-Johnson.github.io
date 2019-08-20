@@ -90,3 +90,11 @@
         @include text-prop($size:1em);
     }
 }
+
+.card-title,
+.review__text{
+    text-align: center;
+    @include mq('md'){
+        text-align: left;
+    }
+}

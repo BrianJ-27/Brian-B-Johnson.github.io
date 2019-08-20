@@ -484,8 +484,9 @@ h6 {
 
 .nav__item {
   display: flex;
+  align-items: center;
   width: 100%;
-  padding: 1.8em; }
+  padding: 1em; }
   .nav__item:hover {
     background: #132279; }
 
@@ -599,6 +600,14 @@ h6 {
   @media (min-width: 1024px) {
     .content__bio {
       font-size: 1em; } }
+
+.card-title,
+.review__text {
+  text-align: center; }
+  @media (min-width: 768px) {
+    .card-title,
+    .review__text {
+      text-align: left; } }
 
 .btn__overlay {
   background: transparent;
@@ -927,6 +936,15 @@ figcaption {
   .col-lg-4:last-child {
     flex-basis: 50%;
     margin: 0 auto; } }
+
+.connect__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media (min-width: 768px) {
+    .connect__wrapper {
+      display: flex;
+      flex-direction: row; } }
 
 #footer {
   display: flex;

@@ -58,9 +58,9 @@
 
 //main nav <li> styles
 .nav__item{
-    @include flex_me();
+    @include flex_me($vertAlign:center);
     width: 100%;
-    padding: 1.8em;
+    padding: 1em;
     &:hover{
         background: $color-main-light;
     }

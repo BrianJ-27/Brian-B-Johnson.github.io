@@ -320,3 +320,11 @@ figcaption{
     margin: 0 auto;
   }
 }
+
+.connect__wrapper{
+  @include flex_me($dir:column, $vertAlign:center);
+  @include mq('md'){
+    @include flex_me($dir:row);
+  }
+  
+}
