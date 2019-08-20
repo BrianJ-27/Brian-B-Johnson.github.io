@@ -55,6 +55,14 @@
     }
 }
 
+//First h2 subtitle styles
+.title__bio{
+    position: relative;
+    top: -20px;
+    @include mq('md'){
+        top: 0;
+    }
+}
 
 /*----CONTEXT STYLES----*/
 
@@ -71,30 +79,40 @@
     }
 }
 
-.title__bio{
-    position: relative;
-    top: -20px;
-    @include mq('md'){
-        top: 0;
-    }
-}
 
+// Content in the About Me Section 
 .content__bio{
-    @include text-prop($size:1em, $l-height:1.3);
-    text-align: justify;
+    @include text-prop($size:1em, $l-height:1.6);
+    text-align: center;
     @include mq('md'){
         @include text-prop($size:.8em, $l-height:1.5);
         padding-left: 2em;
+        text-align: left;
     }
     @include mq('lg'){
-        @include text-prop($size:1em);
+        @include text-prop($size:1.1em);
     }
 }
-
+// Styles for project title & content tags
 .card-title,
 .review__text{
     text-align: center;
     @include mq('md'){
         text-align: left;
     }
+}
+
+.card-text{
+    font-weight: 300;
+}
+
+//overlay title styles
+.title__overlay{
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+//styles for footer content
+.footer__text{
+    text-transform: uppercase;
 }

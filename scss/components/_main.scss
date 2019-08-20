@@ -241,15 +241,6 @@
   }
 }
 
-
-.bio__img{
-  @include mq('md'){
-    flex: 1 30%;
-    overflow: hidden;
-  }
- 
-}
-
 //Project Card Styles
 
 .card{
@@ -304,16 +295,12 @@ figcaption{
   transform: translateX(100%);
 }
 
-.title__overlay{
-    font-size: 1.2em;
-    text-transform: uppercase;
-}
-
 //References Styles
 #references{
   padding: 0 1em;
 }
 
+//Styling for last review (Nestor Padilla)
 .col-lg-4:last-child{
   @include mq('md'){
     flex-basis: 50%;
@@ -321,10 +308,10 @@ figcaption{
   }
 }
 
+//Flex-Box styling for Let's Get Connected section
 .connect__wrapper{
   @include flex_me($dir:column, $vertAlign:center);
   @include mq('md'){
     @include flex_me($dir:row);
-  }
-  
+  } 
 }

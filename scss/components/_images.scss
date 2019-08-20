@@ -3,6 +3,7 @@
 // **************************************
 .img__banner{
     @extend %ctr-img;
+    filter: brightness(0.5);
 }
 .img__bio{
     @extend %ctr-img;
@@ -16,6 +17,13 @@
     @include roundy($dim:125px, $border: 1px solid $color-border-dark);
     
 }
+
+.bio__img{
+    @include mq('md'){
+      flex: 1 30%;
+      overflow: hidden;
+    }
+  }
 
 .footer__icons{
     width: 100px;

@@ -385,6 +385,9 @@ nav {
     nav {
       padding-top: 0; } }
 
+p {
+  font-family: "Roboto", sans-serif; }
+
 a {
   display: inline-block;
   color: #111E6C;
@@ -564,6 +567,13 @@ h6 {
       font-size: 1em;
       line-height: 1.5; } }
 
+.title__bio {
+  position: relative;
+  top: -20px; }
+  @media (min-width: 768px) {
+    .title__bio {
+      top: 0; } }
+
 /*----CONTEXT STYLES----*/
 .content__banner {
   padding-left: .5em;
@@ -581,25 +591,19 @@ h6 {
       font-size: 1.8em;
       font-weight: 900; } }
 
-.title__bio {
-  position: relative;
-  top: -20px; }
-  @media (min-width: 768px) {
-    .title__bio {
-      top: 0; } }
-
 .content__bio {
   font-size: 1em;
-  line-height: 1.3;
-  text-align: justify; }
+  line-height: 1.6;
+  text-align: center; }
   @media (min-width: 768px) {
     .content__bio {
       font-size: 0.8em;
       line-height: 1.5;
-      padding-left: 2em; } }
+      padding-left: 2em;
+      text-align: left; } }
   @media (min-width: 1024px) {
     .content__bio {
-      font-size: 1em; } }
+      font-size: 1.1em; } }
 
 .card-title,
 .review__text {
@@ -608,6 +612,16 @@ h6 {
     .card-title,
     .review__text {
       text-align: left; } }
+
+.card-text {
+  font-weight: 300; }
+
+.title__overlay {
+  font-size: 1.2em;
+  text-transform: uppercase; }
+
+.footer__text {
+  text-transform: uppercase; }
 
 .btn__overlay {
   background: transparent;
@@ -626,6 +640,9 @@ h6 {
     text-decoration: none;
     color: #fff; }
 
+.img__banner {
+  filter: brightness(0.5); }
+
 .card-img-top {
   max-height: 300px; }
 
@@ -635,6 +652,11 @@ h6 {
   border: 1px solid #111E6C;
   border-radius: 50%; }
 
+@media (min-width: 768px) {
+  .bio__img {
+    flex: 1 30%;
+    overflow: hidden; } }
+
 .footer__icons {
   width: 100px;
   height: 100px;
@@ -642,7 +664,8 @@ h6 {
 
 .header__container {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  box-shadow: 0 8px 7px -3px #DBDBDB; }
 
 .hex-icon {
   padding: .5em;
@@ -870,11 +893,6 @@ h6 {
     .bio__wrapper::after {
       transform: skewY(0deg); } }
 
-@media (min-width: 768px) {
-  .bio__img {
-    flex: 1 30%;
-    overflow: hidden; } }
-
 .card {
   display: flex;
   flex-direction: column;
@@ -925,10 +943,6 @@ figcaption {
 .card:hover figcaption {
   transform: translateX(100%); }
 
-.title__overlay {
-  font-size: 1.2em;
-  text-transform: uppercase; }
-
 #references {
   padding: 0 1em; }
 
@@ -949,7 +963,11 @@ figcaption {
 #footer {
   display: flex;
   justify-content: center;
-  align-items: flex-end; }
+  align-items: center; }
+  @media (min-width: 768px) {
+    #footer {
+      display: flex;
+      align-items: flex-end; } }
 
 #footer address {
   text-transform: uppercase; }
