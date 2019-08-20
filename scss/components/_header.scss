@@ -2,7 +2,6 @@
 // HEADER STYLES
 // **************************************
 .header__container{
-  z-index: 500;
   @include flex_me($vertAlign:center);
 }
 

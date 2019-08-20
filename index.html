@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,500,500i,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,500,500i,900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>Brian's Digital Portfolio</title>
     <script src="https://unpkg.com/scrollreveal"></script>
     <style>
-      /*Ensure elements load hidden before ScrollRevel runs*/
-      html.sr .skills {
-        visibility: hidden;
-      }
+        /*Ensure elements load hidden before ScrollRevel runs*/
+        html.sr .skills {
+            visibility: hidden;
+        }
     </style>
 </head>
 
@@ -24,14 +27,27 @@
         <div class="img__logo"></div>
         <h1 class="title__primary animated rubberBand delay-1s">brian johnson</h1>
         <!-- <div class="hexagon__icon"></div> -->
-        
+
         <div class="hamburger__menu">
             <span class="line line1"></span>
             <span class="line line2"></span>
             <span class="line line3"></span>
         </div>
-        <svg class="hex-icon">
+        <!-- <svg class="hex-icon">
             <use xlink:href="/icons/bjs-icon-map.svg#hexagon">
+        </svg> -->
+        <svg class="hex-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1"
+            x="0px" y="0px" width="512px" height="512px" viewBox="0 0 485.688 485.688"
+            style="enable-background:new 0 0 485.688 485.688;" xml:space="preserve" class="">
+            <g transform="matrix(0.980002 0 0 0.980002 4.85639 4.85639)">
+                <g>
+                    <g>
+                        <path
+                            d="M364.269,453.155H121.416L0,242.844L121.416,32.533h242.853l121.419,210.312L364.269,453.155z M131.905,434.997h221.878    l110.939-192.152L353.783,50.691H131.905L20.966,242.844L131.905,434.997z"
+                            data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFBF00" />
+                    </g>
+                </g>
+            </g>
         </svg>
         <nav class="header__nav--bar">
             <ul class="header__nav--wrapper">
@@ -41,7 +57,7 @@
                 <li><a class="header--nav__link" href="#projects">experience</a></li>
                 <li><a class="header--nav__link" href="#references">references</a></li>
                 <li><a class="header--nav__link" href="#contact">contact me</a></li>
-                <li><a class="header--nav__link" href="sci.pdf">Resume</a></li>        
+                <li><a class="header--nav__link" href="sci.pdf">Resume</a></li>
             </ul>
         </nav>
         <div></div>
@@ -60,76 +76,77 @@
                 <svg class="nav__icon">
                     <use xlink:href="icons/bjs-icon-map.svg#person">
                 </svg>
-                <a class="nav__link nav__icon2"  href="#about__me">about me</a>
-            </li> 
+                <a class="nav__link nav__icon2" href="#about__me">about me</a>
+            </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="icons/bjs-icon-map.svg#skills">
                 </svg>
-                <a class="nav__link nav__icon3"  href="#skills">skills</a>
+                <a class="nav__link nav__icon3" href="#skills">skills</a>
             </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="icons/bjs-icon-map.svg#experience">
                 </svg>
-                <a class="nav__link nav__icon4"  href="#projects">experience</a>
-            </li> 
+                <a class="nav__link nav__icon4" href="#projects">experience</a>
+            </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="icons/bjs-icon-map.svg#references">
                 </svg>
-                <a class="nav__link nav__icon5"  href="#references">references</a>
-            </li> 
+                <a class="nav__link nav__icon5" href="#references">references</a>
+            </li>
 
             <li class="nav__item">
                 <svg class="nav__icon">
                     <use xlink:href="icons/bjs-icon-map.svg#contact">
                 </svg>
-                <a class="nav__link nav__icon6"  href="#contact">contact me</a>
+                <a class="nav__link nav__icon6" href="#contact">contact me</a>
             </li>
-            <li class="nav__item"><a class="nav__link nav__icon7"  href="#resume">resume</a></li>
+            <li class="nav__item"><a class="nav__link nav__icon7" href="#resume">resume</a></li>
         </ul>
     </nav>
 
     <main class="main__grid--container">
-            <div id="banner">
-                <img class="img__banner" src="img/Optimized-banner-image2.jpg" alt="Portfolio Banner Picture">
-                <div class="bg__overlay">
-                    <!-- <p class="content__banner">Hey! My name is Brian & I am an
+        <div id="banner">
+            <img class="img__banner" src="img/Optimized-banner-image2.jpg" alt="Portfolio Banner Picture">
+            <div class="bg__overlay">
+                <!-- <p class="content__banner">Hey! My name is Brian & I am an
                                                aspiring front end developer</p> -->
-                    
-                </div>
-            </div>
-            
-            <section id="about__me" class="layout__container">
-                <article class="bio__wrapper">
-                    <h2 class="title__secondary title__bio">The Journey Here</h2>
-                    <p class="content__bio">Why web design? I am motivated to switch careers into a profession
-                        I find meaningful & impactful each day. The goal for me as a designer/
-                        developer is to make your online presence memorable and visually stunning.
-                    </p>
-                    <p class="content__bio">While bringing soft skills to the mix such as project management, attention
-                        to detail and collaboration, I enjoy the challenge of finding working solutions
-                        to complex problems.
-                    </p>
-                    <p class="content__bio">Educating myself with Udemy, LinkedIn Learning & Treehouse since 2017 has
-                        been a stimulating experience I will never forget, allowing me to take on
-                        clients and learn key technical skills. The dream I have is finally becoming
-                        a reality!
-                    </p>
-                    <p class="content__bio">In my free time I enjoy spending time with my wife, drawing, dancing, and
-                        volunteering my time in bible education.
-                    </p>
-                </article>
-                <article class="bio__img--wrapper">
-                    <img class="img__bio img-responsive image-resize" src="img/look-up-blue-lovers.jpg" alt="Biography Picture of Brian & Ally">
-                </article>
-            
 
-            </section>
+            </div>
+        </div>
+
+        <section id="about__me" class="layout__container">
+            <article class="bio__wrapper">
+                <h2 class="title__secondary title__bio">The Journey Here</h2>
+                <p class="content__bio">Why web design? I am motivated to switch careers into a profession
+                    I find meaningful & impactful each day. The goal for me as a designer/
+                    developer is to make your online presence memorable and visually stunning.
+                </p>
+                <p class="content__bio">While bringing soft skills to the mix such as project management, attention
+                    to detail and collaboration, I enjoy the challenge of finding working solutions
+                    to complex problems.
+                </p>
+                <p class="content__bio">Educating myself with Udemy, LinkedIn Learning & Treehouse since 2017 has
+                    been a stimulating experience I will never forget, allowing me to take on
+                    clients and learn key technical skills. The dream I have is finally becoming
+                    a reality!
+                </p>
+                <p class="content__bio">In my free time I enjoy spending time with my wife, drawing, dancing, and
+                    volunteering my time in bible education.
+                </p>
+            </article>
+            <article class="bio__img--wrapper">
+                <img class="img__bio img-responsive image-resize" src="img/look-up-blue-lovers.jpg"
+                    alt="Biography Picture of Brian & Ally">
+            </article>
+
+
+        </section>
 
         <section id="skills">
 
@@ -186,7 +203,7 @@
                     <figcaption class="card-block">
                         <h4 class="card-title"> Employee Directory:</h4>
                         <p class="card-text">Used the fetch method to request 12 random users from a web API.
-                                             Included Sass and CSS techniques like CSS grid & flexbox.
+                            Included Sass and CSS techniques like CSS grid & flexbox.
                         </p>
                     </figcaption>
                     <div class="card__overlay">
@@ -197,10 +214,12 @@
                             <li>CSS3</li>
                         </ul>
                         <button class="btn__overlay">
-                            <a href="https://brianj-27.github.io/Employee-Directory-Project8/" target="_blank">Live Preview</a>
+                            <a href="https://brianj-27.github.io/Employee-Directory-Project8/" target="_blank">Live
+                                Preview</a>
                         </button>
                         <button class="btn__overlay">
-                            <a href="https://github.com/BrianJ-27/Employee-Directory-Project8" target="_blank">Github</a>
+                            <a href="https://github.com/BrianJ-27/Employee-Directory-Project8"
+                                target="_blank">Github</a>
                         </button>
                     </div>
                 </figure>
@@ -211,7 +230,7 @@
                     <figcaption class="card-block">
                         <h4 class="card-title">Web App Dashboard:</h4>
                         <p class="card-text">Created an interactive web app dashboard from scratch. Incorporated CSS
-                                             Grid & Flexbox & chart.js to create a pleasing UX/UI experience.
+                            Grid & Flexbox & chart.js to create a pleasing UX/UI experience.
                         </p>
                     </figcaption>
                     <div class="card__overlay">
@@ -237,7 +256,7 @@
                     <figcaption class="card-block">
                         <h4 class="card-title">Game Show App:</h4>
                         <p class="card-text">Created a browser friendly word guessing game using pure JavaScript.
-                                             Redesigned the game by using CSS transitions.
+                            Redesigned the game by using CSS transitions.
                         </p>
                     </figcaption>
                     <div class="card__overlay">
@@ -248,10 +267,10 @@
                             <li>Sass</li>
                         </ul>
                         <button class="btn__overlay">
-                            <a href="https://brianj-27.github.io/web-game-show-app/" target="_blank">Live Preview</a> 
+                            <a href="https://brianj-27.github.io/web-game-show-app/" target="_blank">Live Preview</a>
                         </button>
                         <button class="btn__overlay">
-                            <a href="https://github.com/BrianJ-27/web-game-show-app" target="_blank">Github</a> 
+                            <a href="https://github.com/BrianJ-27/web-game-show-app" target="_blank">Github</a>
                         </button>
                     </div>
                 </figure>
@@ -261,8 +280,8 @@
                         alt="5th project of Treehouse Techdegree">
                     <figcaption class="card-block">
                         <h4 class="card-title">Photo Gallery:</h4>
-                        <p class="card-text">Image galleries are an important feature of many websites. 
-                                             Showcased core  skills to create an interactive searchable image gallery.
+                        <p class="card-text">Image galleries are an important feature of many websites.
+                            Showcased core skills to create an interactive searchable image gallery.
                         </p>
                     </figcaption>
                     <div class="card__overlay">
@@ -274,10 +293,10 @@
                             <li>JavaScript</li>
                         </ul>
                         <button class="btn__overlay">
-                            <a href="https://brianj-27.github.io/photo-gallery/" target="_blank">Live Preview</a> 
+                            <a href="https://brianj-27.github.io/photo-gallery/" target="_blank">Live Preview</a>
                         </button>
                         <button class="btn__overlay">
-                            <a href="https://github.com/BrianJ-27/photo-gallery" target="_blank">Github</a> 
+                            <a href="https://github.com/BrianJ-27/photo-gallery" target="_blank">Github</a>
                         </button>
                     </div>
                 </figure>
@@ -288,7 +307,7 @@
                     <figcaption class="card-block">
                         <h4 class="card-title">Web Style Guide:</h4>
                         <p class="card-text">Created my own custom css framework that can be dropped into any project to
-                                             speed upstyling, and layout and development as a whole.
+                            speed upstyling, and layout and development as a whole.
                         </p>
                     </figcaption>
                     <div class="card__overlay">
@@ -312,7 +331,7 @@
                     <figcaption class="card-block">
                         <h4 class="card-title">Aletta Bags:</h4>
                         <p class="card-text">Wireframed, designed and developed a professional website from inception.
-                                             Used various web technologies to launch my first independent website.
+                            Used various web technologies to launch my first independent website.
                         </p>
                     </figcaption>
                     <div class="card__overlay">
@@ -324,10 +343,11 @@
                             <li>JavaScript</li>
                         </ul>
                         <button class="btn__overlay">
-                            <a href="https://brianj-27.github.io/Aletta-Bags/index.html" target="_blank">Live Preview</a> 
+                            <a href="https://brianj-27.github.io/Aletta-Bags/index.html" target="_blank">Live
+                                Preview</a>
                         </button>
                         <button class="btn__overlay">
-                            <a href="https://github.com/BrianJ-27/Aletta-Bags" target="_blank">Github</a> 
+                            <a href="https://github.com/BrianJ-27/Aletta-Bags" target="_blank">Github</a>
                         </button>
                     </div>
                 </figure>
@@ -336,74 +356,75 @@
 
         <section id="references" class="team-section text-center my-5">
             <h2 class="title__secondary">Recommendations</h2>
-          <div class="row text-center">
-            <article class="reviews__wrapper col-md-6 col-lg-4">
-                <div class="avatar mx-auto">
-                        <img class="img__person rounded-circle z-depth-1 img-fluid" src="img/randy.jpg" alt="Picture of Randy Layne">
+            <div class="row text-center">
+                <article class="reviews__wrapper col-md-6 col-lg-4">
+                    <div class="avatar mx-auto">
+                        <img class="img__person rounded-circle z-depth-1 img-fluid" src="img/randy.jpg"
+                            alt="Picture of Randy Layne">
                         <h4 class="font-weight-bold dark-grey-text mt-4">Randy Layne</h4>
                         <h6 class="font-weight-bold blue-text my-3">Student Success Specialist at Treehouse</h6>
                         <p class="font-weight-normal dark-grey-text">
-                           Brian is a dedicated developer committed to not just writing programs that work, 
-                           but are focused on best practices, readability and expanding Brian’s knowledge 
-                           base. I can strongly recommend Brian as an asset to any development team. 
+                            Brian is a dedicated developer committed to not just writing programs that work,
+                            but are focused on best practices, readability and expanding Brian’s knowledge
+                            base. I can strongly recommend Brian as an asset to any development team.
                         </p>
                     </div>
-            </article>
+                </article>
 
-            <article class="reviews__wrapper col-md-6 col-lg-4">
+                <article class="reviews__wrapper col-md-6 col-lg-4">
                     <div class="avatar mx-auto">
-                        <img class="img__person rounded-circle z-depth-1 img-fluid" src="img/alicia.jpg" alt="Picture of Alicia Mendez">
+                        <img class="img__person rounded-circle z-depth-1 img-fluid" src="img/alicia.jpg"
+                            alt="Picture of Alicia Mendez">
                         <h4 class="font-weight-bold dark-grey-text mt-4">Alicia Mendez </h4>
-                        <h6 class="font-weight-bold blue-text my-3">CEO & Brand President Aletta Bags LLC</h6> 
+                        <h6 class="font-weight-bold blue-text my-3">CEO & Brand President Aletta Bags LLC</h6>
                         <p class="font-weight-normal dark-grey-text">
-                           Brian is a dedicated developer committed to not just writing programs that work, 
-                           but are focused on best practices, readability and expanding Brian’s knowledge 
-                           base. I can strongly recommend Brian as an asset to any development team. 
+                            Brian is a dedicated developer committed to not just writing programs that work,
+                            but are focused on best practices, readability and expanding Brian’s knowledge
+                            base. I can strongly recommend Brian as an asset to any development team.
                         </p>
                     </div>
-            </article>
+                </article>
 
-            <article class="reviews__wrapper col-md-12 col-lg-4">
+                <article class="reviews__wrapper col-md-12 col-lg-4">
                     <div class="avatar mx-auto">
-                        <img class="img__person rounded-circle z-depth-1 img-fluid" src="img/nestor.png" alt="Picture of Nestor Padilla">
+                        <img class="img__person rounded-circle z-depth-1 img-fluid" src="img/nestor.png"
+                            alt="Picture of Nestor Padilla">
                         <h4 class="font-weight-bold dark-grey-text mt-4">Nestor Padilla</h4>
                         <h6 class="font-weight-bold blue-text my-3">Senior Developer</h6>
                         <p class="font-weight-normal dark-grey-text">
-                           Brian is a dedicated developer committed to not just writing programs that work, 
-                           but are focused on best practices, readability and expanding Brian’s knowledge 
-                           base. I can strongly recommend Brian as an asset to any development team. 
+                            Brian is a dedicated developer committed to not just writing programs that work,
+                            but are focused on best practices, readability and expanding Brian’s knowledge
+                            base. I can strongly recommend Brian as an asset to any development team.
                         </p>
                     </div>
-                </article>            
-            </div>   
+                </article>
+            </div>
         </section>
         <section id="contact">
-                <h2 class="title__secondary">Let's Get Connected</h2>
-                <div class="connect__wrapper">
-                    <a href="mailto:johnson8727@hotmail.com" target="_blank">
-                            <svg class="footer__icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M496 112.011H272c-8.832 0-16 7.168-16 16s7.168 16 16 
+            <h2 class="title__secondary">Let's Get Connected</h2>
+            <div class="connect__wrapper">
+                <a href="mailto:johnson8727@hotmail.com" target="_blank">
+                    <svg class="footer__icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M496 112.011H272c-8.832 0-16 7.168-16 16s7.168 16 16 
                                         16h177.376l-98.304 76.448-70.496-44.832-17.152 27.008 
                                         80 50.88a15.915 15.915 0 0 0 8.576 2.496c3.456 0 
                                         6.944-1.12 9.824-3.36L480 160.715v207.296H272c-8.832 
                                         0-16 7.168-16 16s7.168 16 16 16h224c8.832 0 16-7.168 
-                                        16-16v-256c0-8.832-7.168-16-16-16z" 
-                                        fill="#1976d2"/>
-                                <path d="M282.208 19.691c-3.648-3.04-8.544-4.352-13.152-3.392l-256 
+                                        16-16v-256c0-8.832-7.168-16-16-16z" fill="#1976d2" />
+                        <path d="M282.208 19.691c-3.648-3.04-8.544-4.352-13.152-3.392l-256 
                                         48A15.955 15.955 0 0 0 0 80.011v352c0 7.68 5.472 14.304 
                                         13.056 15.712l256 48c.96.192 1.952.288 2.944.288 3.712 0 
                                         7.328-1.28 10.208-3.68a16.006 16.006 0 0 0 
-                                        5.792-12.32v-448c0-4.768-2.112-9.28-5.792-12.32z" 
-                                        fill="#2196f3"/>
-                                <path d="M144 368.011c-44.096 0-80-43.072-80-96s35.904-96 80-96 
+                                        5.792-12.32v-448c0-4.768-2.112-9.28-5.792-12.32z" fill="#2196f3" />
+                        <path d="M144 368.011c-44.096 0-80-43.072-80-96s35.904-96 80-96 
                                         80 43.072 80 96-35.904 96-80 96zm0-160c-26.464 0-48 
-                                        28.704-48 64s21.536 64 48 64 48-28.704 48-64-21.536-64-48-64z" 
-                                        fill="#fafafa"/>
-                            </svg> 
-                    </a>
-                    <a href="https://www.linkedin.com/in/brian-johnson-45161688/" target="_blank">
-                        <svg class="footer__icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382 382">
-                            <path d="M347.445 0H34.555C15.471 0 0 15.471 0 34.555v312.889C0 366.529 15.471 
+                                        28.704-48 64s21.536 64 48 64 48-28.704 48-64-21.536-64-48-64z"
+                            fill="#fafafa" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/brian-johnson-45161688/" target="_blank">
+                    <svg class="footer__icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 382 382">
+                        <path d="M347.445 0H34.555C15.471 0 0 15.471 0 34.555v312.889C0 366.529 15.471 
                                  382 34.555 382h312.889C366.529 382 382 366.529 382 347.444V34.555C382 
                                  15.471 366.529 0 347.445 0zM118.207 329.844c0 5.554-4.502 10.056-10.056 
                                  10.056H65.345c-5.554 0-10.056-4.502-10.056-10.056V150.403c0-5.554 
@@ -414,21 +435,42 @@
                                  3.683-55.021-32.813-55.021-28.309 0-34.051 29.066-35.204 42.11v97.079a9.246 
                                  9.246 0 0 1-9.246 9.246h-44.426a9.247 9.247 0 0 1-9.246-9.246V149.593a9.247 
                                  9.247 0 0 1 9.246-9.246h44.426a9.247 9.247 0 0 1 9.246 9.246v15.655c10.497-15.753 
-                                 26.097-27.912 59.312-27.912 73.552 0 73.131 68.716 73.131 106.472v86.846z" 
-                                 fill="#0077b7"/>    
-                        </svg>
-                    </a>
-                    <a href="">
-                        <svg class="footer__icons" viewBox="0 0 496 496">
-                                <path d="M247.992 5.163C111.048 5.163 0 116.627 0 254.163c0 109.992 71.048 203.32 169.632 236.24 12.392 2.296 16.912-5.392 16.912-12 0-5.904-.216-21.56-.336-42.344-69 15.064-83.552-33.376-83.552-33.376-11.264-28.768-27.52-36.408-27.52-36.408-22.528-15.456 1.696-15.16 1.696-15.16 24.88 1.752 37.976 25.672 37.976 25.672 22.144 38.048 58.064 27.048 72.192 20.672 2.232-16.08 8.656-27.064 15.736-33.28-55.056-6.296-112.944-27.64-112.944-123.04 0-27.176 9.656-49.408 25.52-66.832-2.568-6.296-11.072-31.6 2.416-65.872 0 0 20.832-6.688 68.2 25.52 19.784-5.52 41-8.28 62.096-8.392 21.048.112 42.28 2.864 62.096 8.392 47.328-32.208 68.128-25.52 68.128-25.52 13.52 34.272 5.016 59.576 2.456 65.872 15.904 17.424 25.504 39.648 25.504 66.832 0 95.64-57.984 116.68-113.232 122.856 8.904 7.688 16.832 22.872 16.832 46.112 0 33.296-.296 60.128-.296 68.296 0 6.672 4.472 14.424 17.048 11.968C425.016 457.387 496 364.123 496 254.163c0-137.536-111.048-249-248.008-249z" fill="#3e77bf"/><path d="M247.992 5.163C111.048 5.163 0 116.627 0 254.163c0 109.992 71.048 203.32 169.632 236.24 12.392 2.296 16.912-5.392 16.912-12 0-5.904-.216-21.56-.336-42.344-69 15.064-83.552-33.376-83.552-33.376-11.264-28.768-27.52-36.408-27.52-36.408-22.528-15.456 1.696-15.16 1.696-15.16 24.88 1.752 37.976 25.672 37.976 25.672 22.144 38.048 58.064 27.048 72.192 20.672 2.232-16.08 8.656-27.064 15.736-33.28-55.056-6.296-112.944-27.64-112.944-123.04 0-27.176 9.656-49.408 25.52-66.832-2.568-6.296-11.072-31.6 2.416-65.872 0 0 20.832-6.688 68.2 25.52 19.784-5.52 41-8.28 62.096-8.392 21.048.112 42.28 2.864 62.096 8.392 47.328-32.208 68.128-25.52 68.128-25.52 13.52 34.272 5.016 59.576 2.456 65.872 15.904 17.424 25.504 39.648 25.504 66.832 0 95.64-57.984 116.68-113.232 122.856 8.904 7.688 16.832 22.872 16.832 46.112 0 33.296-.296 60.128-.296 68.296 0 6.672 4.472 14.424 17.048 11.968C425.016 457.387 496 364.123 496 254.163c0-137.536-111.048-249-248.008-249z" fill="#3e77bf"/><g fill="#114c82"><path d="M378.496 109.131c13.128 33.904 4.752 58.928 2.2 65.176 15.904 17.424 25.504 39.648 25.504 66.832 0 95.64-57.984 116.68-113.232 122.856 8.904 7.688 16.832 22.872 16.832 46.112 0 33.296-.296 60.128-.296 68.296 0 6.672 4.472 14.424 17.048 11.968C425.016 457.387 496 364.123 496 254.163c0-29.56-5.152-57.896-14.568-84.2-34.192-36-72.248-59.976-102.936-60.832zM192.976 377.323c2.784-5.616 6.184-9.984 9.76-13.144-30.176-3.456-61.168-11.512-83.048-33.744 16.832 28.016 44.24 40.76 73.288 46.888z"/></g><path d="M12.912 270.947c0-137.536 111.048-249 247.992-249 76.04 0 144.056 34.392 189.536 88.488C405.52 46.755 331.616 5.163 247.992 5.163 111.048 5.163 0 116.627 0 254.163c0 61.32 22.12 117.424 58.752 160.792-28.808-40.664-45.84-90.312-45.84-144.008z" fill="#6ca9ea"/><path d="M322.712 426.899c0-23.232-7.928-38.44-16.832-46.128 55.248-6.16 113.24-27.216 113.24-122.848 0-27.184-9.6-49.4-25.52-66.824 2.576-6.296 11.096-31.608-2.456-65.872 0 0-2.576-.792-7.896-.488 5.808 25.84-.416 44.32-2.552 49.568 15.904 17.424 25.504 39.648 25.504 66.832 0 95.64-57.984 116.68-113.232 122.856 8.904 7.688 16.832 22.872 16.832 46.112 0 33.296-.296 60.128-.296 68.296 0 5.872 3.496 12.568 12.92 12.408.064-11.256.288-35.152.288-63.912z" fill="#083e66"/><path d="M117.464 423.995c5.208 10.72 22.712 36.4 68.888 30.992-.064-5.648-.112-11.976-.144-18.928-35.624 7.776-56.656-1.392-68.744-12.064z" fill="#114c82"/><path d="M126.368 391.387a61.241 61.241 0 0 0-8.904-10.544c2.808 4.168 5.792 7.664 8.904 10.544z" fill="#6ca9ea"/>
-                        </svg>
-                    </a>
-                </div>
+                                 26.097-27.912 59.312-27.912 73.552 0 73.131 68.716 73.131 106.472v86.846z"
+                            fill="#0077b7" />
+                    </svg>
+                </a>
+                <a href="">
+                    <svg class="footer__icons" viewBox="0 0 496 496">
+                        <path
+                            d="M247.992 5.163C111.048 5.163 0 116.627 0 254.163c0 109.992 71.048 203.32 169.632 236.24 12.392 2.296 16.912-5.392 16.912-12 0-5.904-.216-21.56-.336-42.344-69 15.064-83.552-33.376-83.552-33.376-11.264-28.768-27.52-36.408-27.52-36.408-22.528-15.456 1.696-15.16 1.696-15.16 24.88 1.752 37.976 25.672 37.976 25.672 22.144 38.048 58.064 27.048 72.192 20.672 2.232-16.08 8.656-27.064 15.736-33.28-55.056-6.296-112.944-27.64-112.944-123.04 0-27.176 9.656-49.408 25.52-66.832-2.568-6.296-11.072-31.6 2.416-65.872 0 0 20.832-6.688 68.2 25.52 19.784-5.52 41-8.28 62.096-8.392 21.048.112 42.28 2.864 62.096 8.392 47.328-32.208 68.128-25.52 68.128-25.52 13.52 34.272 5.016 59.576 2.456 65.872 15.904 17.424 25.504 39.648 25.504 66.832 0 95.64-57.984 116.68-113.232 122.856 8.904 7.688 16.832 22.872 16.832 46.112 0 33.296-.296 60.128-.296 68.296 0 6.672 4.472 14.424 17.048 11.968C425.016 457.387 496 364.123 496 254.163c0-137.536-111.048-249-248.008-249z"
+                            fill="#3e77bf" />
+                        <path
+                            d="M247.992 5.163C111.048 5.163 0 116.627 0 254.163c0 109.992 71.048 203.32 169.632 236.24 12.392 2.296 16.912-5.392 16.912-12 0-5.904-.216-21.56-.336-42.344-69 15.064-83.552-33.376-83.552-33.376-11.264-28.768-27.52-36.408-27.52-36.408-22.528-15.456 1.696-15.16 1.696-15.16 24.88 1.752 37.976 25.672 37.976 25.672 22.144 38.048 58.064 27.048 72.192 20.672 2.232-16.08 8.656-27.064 15.736-33.28-55.056-6.296-112.944-27.64-112.944-123.04 0-27.176 9.656-49.408 25.52-66.832-2.568-6.296-11.072-31.6 2.416-65.872 0 0 20.832-6.688 68.2 25.52 19.784-5.52 41-8.28 62.096-8.392 21.048.112 42.28 2.864 62.096 8.392 47.328-32.208 68.128-25.52 68.128-25.52 13.52 34.272 5.016 59.576 2.456 65.872 15.904 17.424 25.504 39.648 25.504 66.832 0 95.64-57.984 116.68-113.232 122.856 8.904 7.688 16.832 22.872 16.832 46.112 0 33.296-.296 60.128-.296 68.296 0 6.672 4.472 14.424 17.048 11.968C425.016 457.387 496 364.123 496 254.163c0-137.536-111.048-249-248.008-249z"
+                            fill="#3e77bf" />
+                        <g fill="#114c82">
+                            <path
+                                d="M378.496 109.131c13.128 33.904 4.752 58.928 2.2 65.176 15.904 17.424 25.504 39.648 25.504 66.832 0 95.64-57.984 116.68-113.232 122.856 8.904 7.688 16.832 22.872 16.832 46.112 0 33.296-.296 60.128-.296 68.296 0 6.672 4.472 14.424 17.048 11.968C425.016 457.387 496 364.123 496 254.163c0-29.56-5.152-57.896-14.568-84.2-34.192-36-72.248-59.976-102.936-60.832zM192.976 377.323c2.784-5.616 6.184-9.984 9.76-13.144-30.176-3.456-61.168-11.512-83.048-33.744 16.832 28.016 44.24 40.76 73.288 46.888z" />
+                        </g>
+                        <path
+                            d="M12.912 270.947c0-137.536 111.048-249 247.992-249 76.04 0 144.056 34.392 189.536 88.488C405.52 46.755 331.616 5.163 247.992 5.163 111.048 5.163 0 116.627 0 254.163c0 61.32 22.12 117.424 58.752 160.792-28.808-40.664-45.84-90.312-45.84-144.008z"
+                            fill="#6ca9ea" />
+                        <path
+                            d="M322.712 426.899c0-23.232-7.928-38.44-16.832-46.128 55.248-6.16 113.24-27.216 113.24-122.848 0-27.184-9.6-49.4-25.52-66.824 2.576-6.296 11.096-31.608-2.456-65.872 0 0-2.576-.792-7.896-.488 5.808 25.84-.416 44.32-2.552 49.568 15.904 17.424 25.504 39.648 25.504 66.832 0 95.64-57.984 116.68-113.232 122.856 8.904 7.688 16.832 22.872 16.832 46.112 0 33.296-.296 60.128-.296 68.296 0 5.872 3.496 12.568 12.92 12.408.064-11.256.288-35.152.288-63.912z"
+                            fill="#083e66" />
+                        <path
+                            d="M117.464 423.995c5.208 10.72 22.712 36.4 68.888 30.992-.064-5.648-.112-11.976-.144-18.928-35.624 7.776-56.656-1.392-68.744-12.064z"
+                            fill="#114c82" />
+                        <path
+                            d="M126.368 391.387a61.241 61.241 0 0 0-8.904-10.544c2.808 4.168 5.792 7.664 8.904 10.544z"
+                            fill="#6ca9ea" />
+                    </svg>
+                </a>
+            </div>
 
 
 
         </section>
-        
+
 
     </main>
 
@@ -437,8 +479,15 @@
     </footer>
 
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
+
 </html>

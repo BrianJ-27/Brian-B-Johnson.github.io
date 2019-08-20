@@ -33,7 +33,7 @@
 }
 
 .title__secondary{
-    @include text-prop($size:1.4em, $f-weight:bolder, $color:$color-main-dark);
+    @include text-prop($size:1.2em, $f-weight:bolder, $color:$color-main-dark);
     @include flex_me($just:center, $vertAlign: center);
     padding: .5em;
     text-transform: uppercase;

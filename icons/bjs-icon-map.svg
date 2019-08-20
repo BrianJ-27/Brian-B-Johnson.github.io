@@ -25,7 +25,7 @@
                 13 11 11.09zM14.5 6L9 9l5.5 3L20 9l-5.5-3z"/>
     </symbol>
 
-    <symbol  width="24" height="24" viewBox="0 0 28 28" id="experience">
+    <symbol  width="24" height="24" viewBox="0 0 24 24" id="experience">
         <path fill="none" d="M0 0h24v24H0V0z"/>
         <path d="M20 7h-4V5l-2-2h-4L8 5v2H4c-1.1 0-2 .9-2 2v5c0 
                 .75.4 1.38 1 1.73V19c0 1.11.89 2 2 2h14c1.11 0 
@@ -34,7 +34,7 @@
                 4H5v-3h4v1h6v-1h4v3z"/>
     </symbol>
 
-    <symbol width="24" height="24" viewBox="0 0 28 28" id="references">
+    <symbol width="24" height="24" viewBox="0 0 24 24" id="references">
         <path fill="none" d="M0 0h24v24H0V0z"/>
         <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 
                 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 

@@ -18,12 +18,7 @@ body{
 header{
     height: $header-height;
     background: $color-main;
-    right: 0%;
-    left:0;
-    top:0;
-    width: 100%;
-    position: fixed;
-    z-index: 500;
+    @extend %fixed-header-prop;
 }
 
 main{
@@ -38,13 +33,7 @@ section{
 }
 
 figcaption{
-    position: relative;
-    border-top: 2px solid $color-border-dark;
-    background: $color-main-dark;
-    color: $color-text-light;
-    font-weight: bolder;
-    line-height: 1.4;
-    padding: 1em;
+   @extend %figcap-prop; 
 }
 
 nav{

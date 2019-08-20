@@ -2,10 +2,12 @@
 // FOOTER STYLES
 // **************************************
 
+//footer layout style
 #footer{
     @include flex_me($just:center, $vertAlign:flex-end);
 }
 
+//footer content styles
 #footer address{
     text-transform: uppercase;
 }
