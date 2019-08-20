@@ -384,7 +384,12 @@ nav {
       padding-top: 0; } }
 
 a {
-  display: inline-block; }
+  display: inline-block;
+  color: #111E6C;
+  padding: .6em; }
+  a:hover {
+    text-decoration: none;
+    color: inherit; }
 
 p {
   text-align: left;
@@ -600,14 +605,14 @@ h6 {
   color: #111E6C;
   text-transform: uppercase;
   margin-bottom: 1.5em;
-  width: 60%;
   font-size: 1em;
   font-weight: 900;
-  padding: 8px;
   letter-spacing: .5px;
-  transition: background .6s ease-in; }
+  width: 60%;
+  transition: background .4s ease-in; }
   .btn__overlay:hover {
     background: #111E6C;
+    text-decoration: none;
     color: #fff; }
 
 .card-img-top {

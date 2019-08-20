@@ -56,6 +56,12 @@ nav{
 
 a{
     display: inline-block;
+    color: $color-main;
+    padding: .6em;
+    &:hover{
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 p{

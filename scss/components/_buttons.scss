@@ -2,8 +2,6 @@
 // BUTTON STYLES
 // **************************************
 
-//view more button styles
-
 
 .btn__overlay{
     background: transparent;
@@ -12,14 +10,14 @@
     color: $color-main;
     text-transform: uppercase;
     margin-bottom: 1.5em; 
-    width: 60%;
     font-size: 1em;
     font-weight: 900;
-    padding: 8px;
     letter-spacing: .5px;
-    transition: background .6s ease-in;
+    width: 60%;
+    transition: background .4s ease-in;
     &:hover{
-        background: $color-main; 
+        background: $color-main;
+        text-decoration: none;
         color: $white;
     }
 }
