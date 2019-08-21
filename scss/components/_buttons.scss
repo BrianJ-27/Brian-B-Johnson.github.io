@@ -2,22 +2,20 @@
 // BUTTON STYLES
 // **************************************
 
-//button styles for project card overlay section
+//button styles for project card overlay
 .btn__overlay{
-    background: transparent;
-    outline: none;
-    border: 3px solid $color-main;
-    color: $color-main;
-    text-transform: uppercase;
-    margin-bottom: 1.5em; 
-    font-size: 1em;
-    font-weight: 900;
-    letter-spacing: .5px;
-    width: 70%;
+    @extend %btn-properties;
     transition: background .4s ease-in;
     &:hover{
         background: $color-main;
         text-decoration: none;
         color: $white;
     }
+}
+.btn__overlay:nth-of-type(1){
+    margin-top: auto;
+}
+
+.btn__overlay:nth-of-type(2){
+    margin: 1em 0;
 }

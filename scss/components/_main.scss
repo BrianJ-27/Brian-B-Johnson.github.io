@@ -260,6 +260,7 @@
 
 
 .card li{
+    font-size: .9em;
     margin-bottom: .5em;
     text-transform: uppercase;
     text-align: center;
@@ -282,7 +283,7 @@ figcaption{
 
 .card__overlay{
   transform: translateX(-100%);
-  @include flex_me($dir:column, $just:center, $vertAlign:center);
+  @include flex_me($dir:column, $just:flex-start);
 }
 
 .card:hover .card__overlay,

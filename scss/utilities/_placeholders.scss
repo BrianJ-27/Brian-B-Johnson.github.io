@@ -14,6 +14,18 @@
     height: 100%;
 }
 
+%btn-properties{
+    outline: none;
+    border: 3px solid $color-main;
+    color: $color-main;
+    letter-spacing: .5px;
+    width: 70%;
+    background: transparent;
+    text-transform: uppercase; 
+    font-size: 1em;
+    font-weight: 900;
+}
+
 %fixed-header-prop{
     right: 0%;
     left:0;

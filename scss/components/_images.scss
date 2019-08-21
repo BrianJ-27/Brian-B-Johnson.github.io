@@ -1,29 +1,30 @@
 // **************************************
 // IMAGE STYLES
 // **************************************
-.img__banner{
-    @extend %ctr-img;
-    filter: brightness(0.5);
-}
-.img__bio{
-    @extend %ctr-img;
-}
+
+
+//Center and contain all images on page
+.img__banner,
+.img__bio,
+.img__person,
 .card-img-top{
     @extend %ctr-img;
-    max-height: 300px;
 }
+
+//banner image styles
+.img__banner{
+    filter: brightness(0.5);
+}
+
+.card-img-top{
+    height: 50%;
+}
+
 .img__person{
-    @extend %ctr-img;
     @include roundy($dim:125px, $border: 1px solid $color-border-dark);
     
 }
 
-.bio__img{
-    @include mq('md'){
-      flex: 1 30%;
-      overflow: hidden;
-    }
-  }
 
 .footer__icons{
     width: 100px;

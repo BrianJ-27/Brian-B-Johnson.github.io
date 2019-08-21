@@ -94,12 +94,20 @@
     }
 }
 // Styles for project title & content tags
+.title__overlay{
+    margin-top: 1.5em;
+}
+
 .card-title,
 .review__text{
     text-align: center;
     @include mq('md'){
         text-align: left;
     }
+}
+
+.card-title{
+    @include text-prop($size:1.1em, $f-weight:600);
 }
 
 .card-text{

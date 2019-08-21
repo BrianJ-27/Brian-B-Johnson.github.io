@@ -1,6 +1,8 @@
 // **************************************
 // BASE STYLES
 // **************************************
+
+/*--------BASE ELEMENT STYLES--------*/
 *{
     box-sizing: border-box;
 }
@@ -42,8 +44,11 @@ nav{
         padding-top: 0;
     }
 }
+
 p{
     font-family: $font-stack-roboto;
+    text-align: left; 
+    padding: 0 1em;
 }
 
 a{
@@ -56,28 +61,19 @@ a{
     }
 }
 
-p{
-    text-align: left; 
-    padding: 0 1em;
-}
-
 footer{
     height: $footer-height;
     background: $color-bg-darkest;
     color: $color-text-light;
 }
-    
+
+/*-----HEADINGS------*/    
 h1,
 h2,
 h3{
     margin: 0;
     padding: 0;
 }
-
-// h2:first-child{
-//     // background-image: radial-gradient($white 40%, $color-main 80%); 
-//     // width: 100%;
-// }
 
 h3{
     text-align: center;
