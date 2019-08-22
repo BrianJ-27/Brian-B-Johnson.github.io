@@ -237,12 +237,13 @@
 }
 
 .bg__overlay{
-   background: rgba($white, .4);
-   position: absolute; 
-   width: 45%;
-   top: 50%;
-   left: 50%;
-   border-radius: 15px;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  width: 45%;
+  padding: .5em;
+  top: 3%;
+  left: 29%;
+  border-radius: 15px;
 }
 
 

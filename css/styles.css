@@ -412,7 +412,8 @@ nav {
 p {
   font-family: "Roboto", sans-serif;
   text-align: left;
-  padding: 0 1em; }
+  padding: 0 1em;
+  margin: 0; }
 
 a {
   display: inline-block;
@@ -622,6 +623,9 @@ h6 {
     .title__bio {
       top: 0; } }
 
+.title__tertiary {
+  font-size: 1.4em; }
+
 /*----CONTEXT STYLES----*/
 .content__banner {
   padding-left: .5em;
@@ -629,7 +633,7 @@ h6 {
   font-weight: 800;
   color: #070c2a;
   text-transform: uppercase;
-  text-align: justify; }
+  text-align: center; }
   @media (min-width: 768px) {
     .content__banner {
       font-size: 1.4em;
@@ -944,8 +948,9 @@ h6 {
   background: rgba(255, 255, 255, 0.4);
   position: absolute;
   width: 45%;
-  top: 50%;
-  left: 50%;
+  padding: .5em;
+  top: 3%;
+  left: 29%;
   border-radius: 15px; }
 
 /*-------Experience Section Class Styles----------*/

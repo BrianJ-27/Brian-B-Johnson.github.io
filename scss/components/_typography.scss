@@ -61,13 +61,17 @@
     }
 }
 
+.title__tertiary{
+    @include text-prop($size: 1.4em);
+}
+
 /*----CONTEXT STYLES----*/
 
 .content__banner{
     padding-left: .5em;
     @include text-prop($size:.6em, $f-weight:800, $color: $color-main-dark);
     text-transform: uppercase;
-    text-align: justify;
+    text-align: center;
     @include mq('md'){
         @include text-prop($size:1.4em, $f-weight:bold);
     }
