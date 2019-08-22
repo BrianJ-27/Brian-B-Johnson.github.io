@@ -59,7 +59,7 @@
 .nav__item{
     @include flex_me($vertAlign:center);
     width: 100%;
-    padding: 1em;
+    padding: .6em 0 .3em 1.5em;
     &:hover{
         background: $color-main-light;
     }
@@ -94,6 +94,6 @@
         fill: $color-accent;
         width: 20px;
         height: 20px;  
-        margin-right: 1em;
+        margin-right: .5em;
 }
 

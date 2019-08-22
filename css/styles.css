@@ -537,7 +537,7 @@ h6 {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1em; }
+  padding: .6em 0 .3em 1.5em; }
   .nav__item:hover {
     background: #132279; }
 
@@ -573,7 +573,7 @@ h6 {
   fill: #FFBF00;
   width: 20px;
   height: 20px;
-  margin-right: 1em; }
+  margin-right: .5em; }
 
 .title__primary {
   font-size: 1.28em;
