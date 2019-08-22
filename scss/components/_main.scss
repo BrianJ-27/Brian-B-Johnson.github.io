@@ -1,10 +1,68 @@
 // **************************************
 // MAIN PAGE STYLES
 // **************************************
+
+/*-------About Me Section Class Styles----------*/
+
 #about__me{
   height: 100%;
 }
 
+.bio__wrapper{
+  position: relative;
+  width: 100%;
+  z-index: 5;
+  @include mq('md'){
+      flex: 2 55%;
+    }
+  @include mq('lg'){
+      flex-basis: 60%;
+    }
+}
+
+.bio__img--wrapper{
+  @include mq('md'){
+    flex: 1 45%;
+  }
+  @include mq('lg'){
+    flex-basis: 40%;
+  }
+}
+
+.bio__wrapper::before,
+.bio__wrapper::after{
+  position: absolute;
+  content: '';
+  background: $white;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.bio__wrapper::before{
+  transform-origin: top left;
+  transform: skewY(-10deg);
+  @include mq('md'){
+    transform: skewY(0deg) skewX(-12deg);
+    transform-origin: bottom left;
+    
+  }
+}
+
+.bio__wrapper::after{
+  transform-origin: top right;
+  transform: skewY(10deg);
+  @include mq('md'){
+    transform: skewY(0deg);
+  }
+}
+
+/*-------Skills Section Class Styles----------*/
 #skills{
   margin-top: 1.5em;
   padding: 0 1em;
@@ -187,62 +245,10 @@
    border-radius: 15px;
 }
 
-.bio__wrapper{
-  position: relative;
-  width: 100%;
-  z-index: 5;
-  @include mq('md'){
-      flex: 2 55%;
-    }
-  @include mq('lg'){
-      flex-basis: 60%;
-    }
-}
 
-.bio__img--wrapper{
-  @include mq('md'){
-    flex: 1 45%;
-  }
-  @include mq('lg'){
-    flex-basis: 40%;
-  }
-}
-
-.bio__wrapper::before,
-.bio__wrapper::after{
-  position: absolute;
-  content: '';
-  background: $white;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-.bio__wrapper::before{
-  transform-origin: top left;
-  transform: skewY(-10deg);
-  @include mq('md'){
-    transform: skewY(0deg) skewX(-12deg);
-    transform-origin: bottom left;
-    
-  }
-}
-
-.bio__wrapper::after{
-  transform-origin: top right;
-  transform: skewY(10deg);
-  @include mq('md'){
-    transform: skewY(0deg);
-  }
-}
+/*-------Experience Section Class Styles----------*/
 
 //Project Card Styles
-
 .card{
   overflow: hidden;
   position: relative;
@@ -255,7 +261,6 @@
      margin-bottom: 1em; 
   }
 }
-
 
 .card li{
     font-size: .9em;
@@ -291,7 +296,8 @@ figcaption{
   transform: translateX(100%);
 }
 
-//References Styles
+/*-------References Section Class Styles----------*/
+
 #references{
   padding: 0 1em;
 }
@@ -303,6 +309,7 @@ figcaption{
     margin: 0 auto;
   }
 }
+/*-------Lets Get Connected Section Class Styles----------*/
 
 //Flex-Box styling for Let's Get Connected section
 .connect__wrapper{

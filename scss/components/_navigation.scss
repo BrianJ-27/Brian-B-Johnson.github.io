@@ -65,6 +65,16 @@
     }
 }
 
+#resume__mobile{
+    margin-left: 2.2em;
+    border: 2px solid $color-border-light;
+    border-radius: 5px;
+    &:hover{
+        background: $color-accent;
+        color: $color-main-dark;
+    }
+}
+
 //mobile & tablet link styles
 .header--nav__link,
 .nav__link{

@@ -36,6 +36,7 @@ section{
 
 figcaption{
    @extend %figcap-prop; 
+   min-height: 60%;
 }
 
 nav{
@@ -77,6 +78,7 @@ h3{
 
 h3{
     text-align: center;
+    margin-top: 1em;
 }
 
 h4{

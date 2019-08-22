@@ -400,6 +400,9 @@ section {
   margin: 0 auto;
   background: #fff; }
 
+figcaption {
+  min-height: 60%; }
+
 nav {
   padding-top: 6em; }
   @media (min-width: 1024px) {
@@ -432,7 +435,8 @@ h3 {
   padding: 0; }
 
 h3 {
-  text-align: center; }
+  text-align: center;
+  margin-top: 1em; }
 
 h4 {
   text-transform: uppercase;
@@ -535,6 +539,14 @@ h6 {
   padding: 1em; }
   .nav__item:hover {
     background: #132279; }
+
+#resume__mobile {
+  margin-left: 2.2em;
+  border: 2px solid #FFBF00;
+  border-radius: 5px; }
+  #resume__mobile:hover {
+    background: #FFBF00;
+    color: #070c2a; }
 
 .header--nav__link,
 .nav__link {
@@ -679,6 +691,15 @@ h6 {
 .btn__overlay:nth-of-type(2) {
   margin: 1em 0; }
 
+.bio__img--wrapper {
+  background-image: url(../img/look-up-blue-lovers.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 25em; }
+  @media (min-width: 768px) {
+    .bio__img--wrapper {
+      height: initial; } }
+
 .img__banner {
   filter: brightness(0.5); }
 
@@ -751,9 +772,58 @@ h6 {
     .change .line3 {
       margin-left: 39px; } }
 
+/*-------About Me Section Class Styles----------*/
 #about__me {
   height: 100%; }
 
+.bio__wrapper {
+  position: relative;
+  width: 100%;
+  z-index: 5; }
+  @media (min-width: 768px) {
+    .bio__wrapper {
+      flex: 2 55%; } }
+  @media (min-width: 1024px) {
+    .bio__wrapper {
+      flex-basis: 60%; } }
+
+@media (min-width: 768px) {
+  .bio__img--wrapper {
+    flex: 1 45%; } }
+@media (min-width: 1024px) {
+  .bio__img--wrapper {
+    flex-basis: 40%; } }
+
+.bio__wrapper::before,
+.bio__wrapper::after {
+  position: absolute;
+  content: '';
+  background: #fff;
+  display: block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1; }
+
+.bio__wrapper::before {
+  transform-origin: top left;
+  transform: skewY(-10deg); }
+  @media (min-width: 768px) {
+    .bio__wrapper::before {
+      transform: skewY(0deg) skewX(-12deg);
+      transform-origin: bottom left; } }
+
+.bio__wrapper::after {
+  transform-origin: top right;
+  transform: skewY(10deg); }
+  @media (min-width: 768px) {
+    .bio__wrapper::after {
+      transform: skewY(0deg); } }
+
+/*-------Skills Section Class Styles----------*/
 #skills {
   margin-top: 1.5em;
   padding: 0 1em; }
@@ -878,53 +948,7 @@ h6 {
   left: 50%;
   border-radius: 15px; }
 
-.bio__wrapper {
-  position: relative;
-  width: 100%;
-  z-index: 5; }
-  @media (min-width: 768px) {
-    .bio__wrapper {
-      flex: 2 55%; } }
-  @media (min-width: 1024px) {
-    .bio__wrapper {
-      flex-basis: 60%; } }
-
-@media (min-width: 768px) {
-  .bio__img--wrapper {
-    flex: 1 45%; } }
-@media (min-width: 1024px) {
-  .bio__img--wrapper {
-    flex-basis: 40%; } }
-
-.bio__wrapper::before,
-.bio__wrapper::after {
-  position: absolute;
-  content: '';
-  background: #fff;
-  display: block;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  z-index: -1; }
-
-.bio__wrapper::before {
-  transform-origin: top left;
-  transform: skewY(-10deg); }
-  @media (min-width: 768px) {
-    .bio__wrapper::before {
-      transform: skewY(0deg) skewX(-12deg);
-      transform-origin: bottom left; } }
-
-.bio__wrapper::after {
-  transform-origin: top right;
-  transform: skewY(10deg); }
-  @media (min-width: 768px) {
-    .bio__wrapper::after {
-      transform: skewY(0deg); } }
-
+/*-------Experience Section Class Styles----------*/
 .card {
   overflow: hidden;
   position: relative;
@@ -967,6 +991,7 @@ figcaption {
 .card:hover figcaption {
   transform: translateX(100%); }
 
+/*-------References Section Class Styles----------*/
 #references {
   padding: 0 1em; }
 
@@ -975,6 +1000,7 @@ figcaption {
     flex-basis: 50%;
     margin: 0 auto; } }
 
+/*-------Lets Get Connected Section Class Styles----------*/
 .connect__wrapper {
   display: flex;
   flex-direction: column;
