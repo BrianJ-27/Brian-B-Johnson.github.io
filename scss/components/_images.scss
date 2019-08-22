@@ -11,21 +11,23 @@
     @extend %ctr-img;
 }
 
-//banner image styles
+//Banner Image Styles
 .img__banner{
     filter: brightness(0.5);
 }
 
+//Project Card Images
 .card-img-top{
     height: 50%;
 }
 
+//Avatar image styling for reviews 
 .img__person{
     @include roundy($dim:125px, $border: 1px solid $color-border-dark);
     
 }
 
-
+// Styling for social media icons
 .footer__icons{
     width: 100px;
     height: 100px;
