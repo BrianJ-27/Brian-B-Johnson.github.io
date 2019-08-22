@@ -16,7 +16,6 @@
 }
 
 .header__nav--wrapper{
-    @include flex_me($just:flex-end, $vertAlign:center);
     height: inherit;
     width: 100%;
 }

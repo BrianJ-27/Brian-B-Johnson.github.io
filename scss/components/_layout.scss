@@ -1,24 +1,40 @@
 // **************************************
 // LAYOUT STYLES
 // **************************************
-.layout__container{
+
+/*------FLEXBOX LAYOUT STYLES-----------*/
+
+//header flex styles
+.header__container{
+    @include flex_me($vertAlign:center);
+  }
+
+//about me bio flex styles
+.bio__container{
     @include mq('md'){
        @include flex_me($wrap:wrap);
     }  
 } 
 
-.header__container{
-    @include flex_me($vertAlign:center);
-    box-shadow: 0 8px 7px -3px $silver-surfer;
-  }
-
-.connect__wrapper{
-    @include flex_me($just:center);
+//header navigation flex styles
+  .header__nav--wrapper{
+    @include flex_me($just:flex-end, $vertAlign:center);
 }
 
-// .main__grid--container{
+//project card flex styles
+.card{
+    @include flex_me($dir:column, $vertAlign: center);
+  }
 
-// }
+//social media container flex styles
+.connect__wrapper{
+    @include flex_me($dir:column, $vertAlign:center, $just:center);
+    @include mq('md'){
+      @include flex_me($dir:row);
+    } 
+  }
+
+/*------GRID LAYOUT STYLES-----------*/
 
 //Layed out card with CSS Grid 
 .grid__row--card{

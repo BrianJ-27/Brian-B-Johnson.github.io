@@ -34,7 +34,6 @@
 
 .title__secondary{
     @include text-prop($size:1.2em, $f-weight:bolder, $color:$color-main-dark);
-    @include flex_me($just:center, $vertAlign: center);
     padding: .5em;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -42,13 +41,11 @@
     text-align: center;
     &::after{
         content: "\003e";
-        color: $color-accent;
-        font-size: 2em;
+        @extend %psuedo-sec-title;
     }
     &::before{
-        color: $color-accent;
         content: "\003c";
-        font-size: 2em;
+        @extend %psuedo-sec-title;
     }
     @include mq('md'){
         @include text-prop($size:1em, $l-height: 1.5);

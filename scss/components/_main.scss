@@ -244,7 +244,6 @@
 //Project Card Styles
 
 .card{
-  @include flex_me($dir:column, $vertAlign: center);
   overflow: hidden;
   position: relative;
   background:$color-bg-light;  
@@ -256,7 +255,6 @@
      margin-bottom: 1em; 
   }
 }
-
 
 
 .card li{
@@ -272,7 +270,8 @@
   position: absolute;
   top: 0%;
   background: $white; 
-  @include flex_me($dir:column, $just:center, $vertAlign:center);
+  @include flex_me($dir:column, $just:flex-start, $vertAlign:center);
+  transform: translateX(-100%);
 }
 
 .card__overlay,
@@ -281,10 +280,6 @@ figcaption{
   transition: transform .8s ease-out;
 }
 
-.card__overlay{
-  transform: translateX(-100%);
-  @include flex_me($dir:column, $just:flex-start);
-}
 
 .card:hover .card__overlay,
 .card:hover figcaption{
