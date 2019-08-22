@@ -631,7 +631,7 @@ h6 {
   padding-left: .5em;
   font-size: 0.6em;
   font-weight: 800;
-  color: #070c2a;
+  color: #fff;
   text-transform: uppercase;
   text-align: center; }
   @media (min-width: 768px) {
@@ -646,7 +646,8 @@ h6 {
 .content__bio {
   font-size: 1em;
   line-height: 1.6;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 1em; }
   @media (min-width: 768px) {
     .content__bio {
       font-size: 0.8em;
@@ -670,7 +671,8 @@ h6 {
 
 .card-title {
   font-size: 1.1em;
-  font-weight: 600; }
+  font-weight: 600;
+  padding: 0 1em; }
 
 .card-text {
   font-weight: 300; }
@@ -699,7 +701,7 @@ h6 {
   background-image: url(../img/look-up-blue-lovers.jpg);
   background-position: center;
   background-size: cover;
-  height: 25em; }
+  height: 15em; }
   @media (min-width: 768px) {
     .bio__img--wrapper {
       height: initial; } }
@@ -777,6 +779,9 @@ h6 {
       margin-left: 39px; } }
 
 /*-------About Me Section Class Styles----------*/
+#banner {
+  position: relative; }
+
 #about__me {
   height: 100%; }
 
@@ -945,12 +950,11 @@ h6 {
   100% {
     width: 50%; } }
 .bg__overlay {
-  background: rgba(255, 255, 255, 0.4);
   position: absolute;
   width: 45%;
   padding: .5em;
   top: 3%;
-  left: 29%;
+  left: 2%;
   border-radius: 15px; }
 
 /*-------Experience Section Class Styles----------*/
@@ -963,7 +967,7 @@ h6 {
   border-radius: 10px 10px 0 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); }
   .card ul {
-    margin-bottom: 1em; }
+    margin: 1em; }
 
 .card li {
   font-size: .9em;

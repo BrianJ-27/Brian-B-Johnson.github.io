@@ -1,11 +1,13 @@
 // **************************************
 // IMAGE STYLES
 // **************************************
+
+//styled the image with the background image to ensure it doesn't stretch on all screen sizes
 .bio__img--wrapper{
     background-image: url(../img/look-up-blue-lovers.jpg);
     background-position: center;
     background-size: cover;
-    height: 25em;
+    height: 15em;
     @include mq ('md'){
         height: initial;
     }

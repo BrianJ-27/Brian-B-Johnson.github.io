@@ -69,7 +69,7 @@
 
 .content__banner{
     padding-left: .5em;
-    @include text-prop($size:.6em, $f-weight:800, $color: $color-main-dark);
+    @include text-prop($size:.6em, $f-weight:800, $color: $color-text-light);
     text-transform: uppercase;
     text-align: center;
     @include mq('md'){
@@ -81,10 +81,12 @@
 }
 
 
+
 // Content in the About Me Section 
 .content__bio{
     @include text-prop($size:1em, $l-height:1.6);
     text-align: center;
+    padding-bottom: 1em;
     @include mq('md'){
         @include text-prop($size:.8em, $l-height:1.5);
         padding-left: 2em;
@@ -109,6 +111,7 @@
 
 .card-title{
     @include text-prop($size:1.1em, $f-weight:600);
+    padding: 0 1em;
 }
 
 .card-text{

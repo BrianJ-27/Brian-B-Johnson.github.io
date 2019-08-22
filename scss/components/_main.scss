@@ -4,6 +4,10 @@
 
 /*-------About Me Section Class Styles----------*/
 
+#banner{
+  position: relative;
+}
+
 #about__me{
   height: 100%;
 }
@@ -237,12 +241,11 @@
 }
 
 .bg__overlay{
-  background: rgba(255, 255, 255, 0.4);
   position: absolute;
   width: 45%;
   padding: .5em;
   top: 3%;
-  left: 29%;
+  left: 2%;
   border-radius: 15px;
 }
 
@@ -259,7 +262,7 @@
   border-radius: 10px 10px 0 0;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
   & ul{
-     margin-bottom: 1em; 
+     margin: 1em; 
   }
 }
 
