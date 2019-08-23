@@ -11,6 +11,8 @@ menu.addEventListener('click', () => {
     navBar.classList.toggle("show__nav");
 });
 
+
+
 /*--Add Smooth Scroll to Page--*/
 
 // Select all links with hashes
@@ -61,14 +63,16 @@ window.sr = ScrollReveal({
   });
   
 
-  sr.reveal('.skills',{
-    origin : 'left',  
-  });
 
+  sr.reveal('.skills', {
+    delay: 650,
+    origin: top,
+  });
+ 
 
   sr.reveal('.content__banner',{
     origin : 'bottom', 
-    delay: 1500, 
+    delay: 1200, 
   });
 
   

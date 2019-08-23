@@ -108,21 +108,22 @@
     margin-top: 1.5em;
 }
 
-.card-title,
-.review__text{
+.card-title{
     text-align: center;
-    @include mq('md'){
-        text-align: left;
-    }
+}
+
+.review__text{
+    text-align: justify;
 }
 
 .card-title{
     @include text-prop($size:1.1em, $f-weight:600);
-    padding: 0 1em;
+    padding: 0em;
 }
 
 .card-text{
     font-weight: 300;
+    padding: 0em .5em;
 }
 
 //overlay title styles

@@ -680,21 +680,20 @@ h6 {
 .title__overlay {
   margin-top: 1.5em; }
 
-.card-title,
-.review__text {
+.card-title {
   text-align: center; }
-  @media (min-width: 768px) {
-    .card-title,
-    .review__text {
-      text-align: left; } }
+
+.review__text {
+  text-align: justify; }
 
 .card-title {
   font-size: 1.1em;
   font-weight: 600;
-  padding: 0 1em; }
+  padding: 0em; }
 
 .card-text {
-  font-weight: 300; }
+  font-weight: 300;
+  padding: 0em .5em; }
 
 .title__overlay {
   font-size: 1.2em;
@@ -745,7 +744,11 @@ h6 {
 .skills__icons {
   width: 40px;
   height: 40px;
-  fill: #111E6C; }
+  fill: #111E6C;
+  transform: scale(1);
+  transition: transform .4s ease-in; }
+  .skills__icons:hover {
+    transform: scale(1.1) rotate(15deg); }
 
 .header__container {
   box-shadow: 0 8px 7px -3px #DBDBDB; }
@@ -1035,9 +1038,6 @@ figcaption {
 /*-------References Section Class Styles----------*/
 #references {
   padding: 0 1em; }
-
-.reviews__wrapper {
-  margin-top: 2em; }
 
 @media (min-width: 768px) {
   .col-lg-4:last-child {
