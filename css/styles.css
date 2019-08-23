@@ -689,6 +689,10 @@ h6 {
 .card-title {
   text-align: center; }
 
+.review__title {
+  font-size: 0.9em;
+  font-weight: 800; }
+
 .review__text {
   text-align: center; }
   @media (min-width: 768px) {
