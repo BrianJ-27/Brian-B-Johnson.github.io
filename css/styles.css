@@ -471,6 +471,9 @@ h6 {
   justify-content: center;
   align-items: center; }
 
+.reviews__wrapper {
+  padding-top: 2em; }
+
 .card {
   display: flex;
   flex-direction: column;
@@ -581,6 +584,9 @@ h6 {
 
 .header--nav__link {
   font-weight: bolder; }
+  @media (min-width: 1024px) {
+    .header--nav__link {
+      font-size: .95em; } }
 
 .nav__icon {
   fill: #FFBF00;
@@ -684,7 +690,10 @@ h6 {
   text-align: center; }
 
 .review__text {
-  text-align: justify; }
+  text-align: center; }
+  @media (min-width: 768px) {
+    .review__text {
+      text-align: left; } }
 
 .card-title {
   font-size: 1.1em;

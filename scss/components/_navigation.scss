@@ -89,6 +89,9 @@
 
 .header--nav__link{
     font-weight: bolder;
+    @include mq('lg'){
+        font-size: .95em;
+    }
 }
 
 

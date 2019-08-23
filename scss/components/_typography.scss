@@ -113,7 +113,10 @@
 }
 
 .review__text{
-    text-align: justify;
+    text-align: center;
+    @include mq('md'){
+        text-align: left;
+    }
 }
 
 .card-title{
