@@ -21,6 +21,11 @@
     @include flex_me($just:flex-end, $vertAlign:center);
 }
 
+.tertiary__wrapper{
+  margin-top: 1em;
+  @include flex_me($just:center, $vertAlign:center);
+}
+
 //project card flex styles
 .card{
     @include flex_me($dir:column, $vertAlign: center);

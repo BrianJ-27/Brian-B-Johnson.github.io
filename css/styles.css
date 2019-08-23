@@ -400,6 +400,11 @@ section {
   margin: 0 auto;
   background: #fff; }
 
+hr {
+  height: 3px;
+  width: 30%;
+  border-top: 2px solid #FFBF00; }
+
 figcaption {
   min-height: 60%; }
 
@@ -436,8 +441,7 @@ h3 {
   padding: 0; }
 
 h3 {
-  text-align: center;
-  margin-top: 1em; }
+  text-align: center; }
 
 h4 {
   text-transform: uppercase;
@@ -459,6 +463,12 @@ h6 {
 .header__nav--wrapper {
   display: flex;
   justify-content: flex-end;
+  align-items: center; }
+
+.tertiary__wrapper {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
   align-items: center; }
 
 .card {
@@ -731,6 +741,11 @@ h6 {
   width: 100px;
   height: 100px;
   padding: 1em; }
+
+.skills__icons {
+  width: 40px;
+  height: 40px;
+  fill: #111E6C; }
 
 .header__container {
   box-shadow: 0 8px 7px -3px #DBDBDB; }
