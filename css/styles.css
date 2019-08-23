@@ -569,6 +569,9 @@ h6 {
     .nav__link:focus {
       color: #DBDBDB; }
 
+.header--nav__link {
+  font-weight: bolder; }
+
 .nav__icon {
   fill: #FFBF00;
   width: 20px;
@@ -629,7 +632,9 @@ h6 {
 /*----CONTEXT STYLES----*/
 .content__banner {
   padding-left: .5em;
-  font-size: 0.6em;
+  padding-bottom: .5em;
+  letter-spacing: 1px;
+  font-size: 1em;
   font-weight: 800;
   color: #fff;
   text-transform: uppercase;
@@ -642,6 +647,10 @@ h6 {
     .content__banner {
       font-size: 1.8em;
       font-weight: 900; } }
+
+.content__banner:nth-of-type(1n+2) {
+  position: relative;
+  right: 0; }
 
 .content__bio {
   font-size: 1em;
@@ -853,11 +862,6 @@ h6 {
   height: 19px;
   border: 2px solid #111E6C;
   box-shadow: 0 1px 5px #333; }
-  .bar span {
-    height: 15px;
-    float: left;
-    background: #FFBF00;
-    border-radius: 5px; }
 
 .html {
   width: 90%;
@@ -895,11 +899,11 @@ h6 {
     width: 0%; }
   100% {
     width: 70%; } }
-.bootstrap {
+.sass {
   width: 75%;
-  animation: bootstrap 2s; }
+  animation: sass 2s; }
 
-@keyframes bootstrap {
+@keyframes sass {
   0% {
     width: 0%; }
   100% {
@@ -940,21 +944,34 @@ h6 {
     width: 0%; }
   100% {
     width: 65%; } }
-.mysql {
-  width: 50%;
-  animation: mysql 2s; }
+.bootstrap {
+  width: 80%;
+  animation: bootstrap 2s; }
 
-@keyframes mysql {
+@keyframes bootstrap {
   0% {
     width: 0%; }
   100% {
-    width: 50%; } }
+    width: 80%; } }
+.progress__bar {
+  height: 15px;
+  float: left;
+  background: #FFBF00;
+  border-radius: 5px; }
+
+.percent {
+  float: right;
+  position: relative;
+  top: -4px;
+  color: black;
+  background: transparent; }
+
 .bg__overlay {
   position: absolute;
-  width: 45%;
+  width: 90%;
   padding: .5em;
-  top: 3%;
-  left: 2%;
+  top: 10%;
+  left: 8%;
   border-radius: 15px; }
 
 /*-------Experience Section Class Styles----------*/
@@ -1003,6 +1020,9 @@ figcaption {
 /*-------References Section Class Styles----------*/
 #references {
   padding: 0 1em; }
+
+.reviews__wrapper {
+  margin-top: 2em; }
 
 @media (min-width: 768px) {
   .col-lg-4:last-child {

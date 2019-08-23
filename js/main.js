@@ -65,4 +65,10 @@ window.sr = ScrollReveal({
     origin : 'left',  
   });
 
+
+  sr.reveal('.content__banner',{
+    origin : 'bottom', 
+    delay: 1500, 
+  });
+
   

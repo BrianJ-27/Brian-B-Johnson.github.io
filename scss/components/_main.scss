@@ -91,12 +91,6 @@
   height: 19px;
   border: 2px solid $color-main;
   box-shadow: 0 1px 5px #333;
-  & span{
-    height: 15px;
-    float: left;
-    background: $color-accent;
-    border-radius: 5px;
-  }
 }
 
 .html{
@@ -156,12 +150,12 @@
   }
 }
 
-.bootstrap{
+.sass{
   width: 75%;
-  animation: bootstrap 2s;
+  animation: sass 2s;
 }
 
-@keyframes bootstrap {
+@keyframes sass {
   0% {
     width: 0%;
   }
@@ -226,26 +220,41 @@
   }
 }
 
-.mysql{
-  width: 50%;
-  animation: mysql 2s;
+.bootstrap{
+  width: 80%;
+  animation: bootstrap 2s;
 }
 
-@keyframes mysql {
+@keyframes bootstrap {
   0% {
     width: 0%;
   }
   100%{
-    width: 50%;
+    width: 80%;
   }
+}
+
+.progress__bar{
+  height: 15px;
+    float: left;
+    background: #FFBF00;
+    border-radius: 5px;
+}
+
+.percent{
+  float: right;
+    position: relative;
+    top: -4px;
+    color: black;
+    background: transparent;
 }
 
 .bg__overlay{
   position: absolute;
-  width: 45%;
+  width: 90%;
   padding: .5em;
-  top: 3%;
-  left: 2%;
+  top: 10%;
+  left: 8%;
   border-radius: 15px;
 }
 
@@ -304,6 +313,10 @@ figcaption{
 
 #references{
   padding: 0 1em;
+}
+
+.reviews__wrapper{
+  margin-top: 2em;
 }
 
 //Styling for last review (Nestor Padilla)
