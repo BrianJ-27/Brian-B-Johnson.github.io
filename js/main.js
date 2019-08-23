@@ -4,12 +4,20 @@
 
 const menu = document.querySelector("header");
 const navBar = document.querySelector(".nav__bar");
+const projectArea = document.querySelector('main');
+// const projectCard = document.querySelectorAll('.card');
+const cardOverlay = document.querySelector('card__overlay');
 
 /*--Toggle mobile navigation once user clicks on nav menu--*/
 menu.addEventListener('click', () => {
     menu.classList.toggle("change");
     navBar.classList.toggle("show__nav");
 });
+
+$('.card').click(function(){
+  $('.card__overlay').addClass('.card__overlay');
+})
+
 
 
 
