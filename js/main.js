@@ -4,9 +4,9 @@
 
 const menu = document.querySelector("header");
 const navBar = document.querySelector(".nav__bar");
-const projectArea = document.querySelector('main');
+// const projectArea = document.querySelector('main');
 // const projectCard = document.querySelectorAll('.card');
-const cardOverlay = document.querySelector('card__overlay');
+// const cardOverlay = document.querySelector('card__overlay');
 
 /*--Toggle mobile navigation once user clicks on nav menu--*/
 menu.addEventListener('click', () => {
@@ -14,12 +14,10 @@ menu.addEventListener('click', () => {
     navBar.classList.toggle("show__nav");
 });
 
+//In mobile mode, when a user clicks anywhere on a card the overlay will show
 $('.card').click(function(){
   $('.card__overlay').addClass('.card__overlay');
-})
-
-
-
+});
 
 /*--Add Smooth Scroll to Page--*/
 
