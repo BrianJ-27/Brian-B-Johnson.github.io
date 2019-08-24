@@ -40,10 +40,6 @@ hr{
     border-top: 2px solid $color-accent;
 }
 
-figcaption{
-   @extend %figcap-prop; 
-   min-height: 60%;
-}
 
 nav{
     padding-top: 6em;

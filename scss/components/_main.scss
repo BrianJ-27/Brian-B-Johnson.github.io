@@ -282,6 +282,11 @@
     text-align: center;
 }
 
+.card-block{
+  @extend %figcap-prop; 
+   min-height: 60%;
+}
+
 .card__overlay{
   height: 100%;
   width: 100%;

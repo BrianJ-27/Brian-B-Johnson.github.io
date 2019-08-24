@@ -7,6 +7,7 @@ I won't be using these variables for this project
 // $button-warning: #FF760D;
 // $button-info: #693D80;
 */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,900|Roboto&display=swap");
 /*
 Important reminders: 
 1) only use functions for simple calculations we can use 
@@ -52,7 +53,7 @@ header {
   position: fixed;
   z-index: 500; }
 
-figcaption {
+.card-block {
   position: relative;
   border-top: 2px solid #111E6C;
   background: #070c2a;
@@ -405,9 +406,6 @@ hr {
   width: 30%;
   border-top: 2px solid #FFBF00; }
 
-figcaption {
-  min-height: 60%; }
-
 nav {
   padding-top: 6em; }
   @media (min-width: 1024px) {
@@ -716,6 +714,7 @@ h6 {
   text-transform: uppercase; }
 
 .btn__overlay {
+  text-align: center;
   transition: background .4s ease-in; }
   .btn__overlay:hover {
     background: #111E6C;
@@ -1022,6 +1021,9 @@ h6 {
   margin-bottom: .5em;
   text-transform: uppercase;
   text-align: center; }
+
+.card-block {
+  min-height: 60%; }
 
 .card__overlay {
   height: 100%;
