@@ -55,11 +55,11 @@ Important reminders:
    $wrap: null,
    $just: null,
    $vertAlign: null,
-   $horznAlign: null)
+   $horznAlign: null,)
    {
      display: flex;
-     flex-direction: $dir;
      flex-wrap: $wrap;
+     flex-direction: $dir;
      justify-content: $just;
      align-items: $vertAlign;
      align-self: $horznAlign;

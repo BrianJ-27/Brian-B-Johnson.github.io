@@ -12,7 +12,7 @@
 //about me bio flex styles
 .bio__container{
     @include mq('md'){
-       @include flex_me($wrap:wrap);
+       @include flex_me();
     }  
 } 
 

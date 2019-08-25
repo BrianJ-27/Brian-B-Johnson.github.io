@@ -299,18 +299,18 @@
 
 .card__overlay,
 .card-img-top,
-figcaption{
+.card-block{
   transition: transform .8s ease-out;
 }
 
 
 .card:hover .card__overlay,
-.card:hover figcaption{
+.card:hover .card-block{
     transform: translateX(0);
 }
 
 .card:hover .card-img-top,
-.card:hover figcaption{
+.card:hover .card-block{
   transform: translateX(100%);
 }
 
