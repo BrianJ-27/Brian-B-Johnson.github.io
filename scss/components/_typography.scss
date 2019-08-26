@@ -91,9 +91,11 @@
 
 .review__name{
     @include text-prop($size:1em, $f-weight:600);
+    
 }
 
-.review__title{
+.review__title,
+.review__company{
     @include text-prop($size:1em, $f-weight:700, $l-height:1);
     width: 80%;
     margin: 0 auto;
@@ -101,6 +103,7 @@
 
 .review__text{
     text-align: center;
+    padding-top: 1em;
     @include mq('md'){
         text-align: left;
     }
