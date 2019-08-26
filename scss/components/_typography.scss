@@ -94,7 +94,7 @@
 }
 
 .review__title{
-    @include text-prop($size:1em, $f-weight:700);
+    @include text-prop($size:1em, $f-weight:700, $l-height:1);
     width: 80%;
     margin: 0 auto;
 }

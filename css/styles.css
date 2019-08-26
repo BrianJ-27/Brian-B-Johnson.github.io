@@ -691,6 +691,7 @@ h6 {
 
 .review__title {
   font-size: 1em;
+  line-height: 1;
   font-weight: 700;
   width: 80%;
   margin: 0 auto; }
