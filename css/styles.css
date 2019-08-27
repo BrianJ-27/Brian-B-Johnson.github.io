@@ -1046,9 +1046,13 @@ h6 {
   border-radius: 15px; }
 
 /*-------Experience Section Class Styles----------*/
-#projects,
-#contact {
+#projects {
   background: #132279; }
+
+#contact {
+  background-image: url(../img/asfalt--light--1920x1080.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 .portfolio-title,
 .contact {
