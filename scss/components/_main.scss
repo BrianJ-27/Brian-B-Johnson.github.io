@@ -73,7 +73,6 @@
 /*-------Skills Section Class Styles----------*/
 #skills{
   padding: 0 1em;
- 
 }
 
 .skills{
@@ -265,11 +264,13 @@
 
 /*-------Experience Section Class Styles----------*/
 
-#projects{
+#projects,
+#contact{
   background: $color-main-light;
 }
 
-.portfolio-title{
+.portfolio-title,
+.contact{
   color: $color-text-light;
 }
 
@@ -329,12 +330,11 @@
 /*-------References Section Class Styles----------*/
 
 #references{
-  padding: 0 1em;
+  padding: 1em;
+  @include mq('md'){
+    padding: 2em;
+  }
 }
-
-// .reviews__wrapper{
-//   padding-top: 1em;
-// }
 
 //Styling for last review (Nestor Padilla)
 .col-lg-4:last-child{

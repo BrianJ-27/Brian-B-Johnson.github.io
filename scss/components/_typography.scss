@@ -100,7 +100,7 @@
 .review__title,
 .review__company{
     @include text-prop($size:1em, $f-weight:700, $l-height:1);
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -126,6 +126,16 @@
 .title__overlay{
     font-size: 1.2em;
     text-transform: uppercase;
+}
+
+//contact title styles
+.contact__title{
+    text-align: center;
+}
+
+.social__name{
+    margin-top: -1em;
+    color: $color-text-dark;
 }
 
 //styles for footer content

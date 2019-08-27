@@ -32,6 +32,7 @@ $color-main-lightest: lighten($color-main, 50%);
 $color-main-dark: darken($color-main, 15%);
 $color-secondary: $silver-surfer;
 $color-accent: $sunflower;
+$color-accent-light: lighten($sunflower, 35%);
 
 //background colors
 $color-bg: $silver-surfer;

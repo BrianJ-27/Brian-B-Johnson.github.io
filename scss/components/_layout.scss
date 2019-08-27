@@ -38,9 +38,18 @@
 //social media container flex styles
 .connect__wrapper{
     @include flex_me($dir:column, $vertAlign:center, $just:center);
+    padding-bottom: 1.5em;
     @include mq('md'){
       @include flex_me($dir:row);
     } 
+  }
+
+  .social__icon--wrapper{
+    @include flex_me($dir:column, $vertAlign: center);
+    background: $color-bg;
+    margin: 1em;
+    border-radius: 5px;
+    padding: 10px;
   }
 
 /*------GRID LAYOUT STYLES-----------*/

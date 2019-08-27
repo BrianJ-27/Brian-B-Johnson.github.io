@@ -505,11 +505,21 @@ h6 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  padding-bottom: 1.5em; }
   @media (min-width: 768px) {
     .connect__wrapper {
       display: flex;
       flex-direction: row; } }
+
+.social__icon--wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #DBDBDB;
+  margin: 1em;
+  border-radius: 5px;
+  padding: 10px; }
 
 /*------GRID LAYOUT STYLES-----------*/
 .grid__row--card {
@@ -706,7 +716,7 @@ h6 {
   font-size: 1em;
   line-height: 1;
   font-weight: 700;
-  width: 80%;
+  width: 90%;
   margin: 0 auto; }
 
 .review__text {
@@ -728,6 +738,13 @@ h6 {
 .title__overlay {
   font-size: 1.2em;
   text-transform: uppercase; }
+
+.contact__title {
+  text-align: center; }
+
+.social__name {
+  margin-top: -1em;
+  color: #2F2F2F; }
 
 .footer__text {
   text-transform: uppercase; }
@@ -1029,10 +1046,12 @@ h6 {
   border-radius: 15px; }
 
 /*-------Experience Section Class Styles----------*/
-#projects {
+#projects,
+#contact {
   background: #132279; }
 
-.portfolio-title {
+.portfolio-title,
+.contact {
   color: #fff; }
 
 .card {
@@ -1082,7 +1101,10 @@ h6 {
 
 /*-------References Section Class Styles----------*/
 #references {
-  padding: 0 1em; }
+  padding: 1em; }
+  @media (min-width: 768px) {
+    #references {
+      padding: 2em; } }
 
 @media (min-width: 768px) {
   .col-lg-4:last-child {
@@ -1103,10 +1125,6 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center; }
-  @media (min-width: 768px) {
-    #footer {
-      display: flex;
-      align-items: flex-end; } }
 
 #footer address {
   text-transform: uppercase; }

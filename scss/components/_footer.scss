@@ -5,9 +5,6 @@
 //footer layout style
 #footer{
     @include flex_me($just:center, $vertAlign:center);
-    @include mq ('md'){
-        @include flex_me($vertAlign:flex-end);
-    }
 }
 
 //footer content styles
