@@ -84,14 +84,14 @@ window.sr = ScrollReveal({
 
 
   sr.reveal('.skills', {
-    delay: 650,
     origin: 'left',
+    delay: 850,
   });
  
 
   sr.reveal('.content__banner',{
     origin : 'bottom', 
-    delay: 1200, 
+    delay: 1000, 
   });
 
   
