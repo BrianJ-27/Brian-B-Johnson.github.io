@@ -19,6 +19,9 @@
     font-size: 2em;
     position: relative;
     top: 5px;
+    @include mq ('md'){
+        top: 8px;  
+    }
 }
 
 %text-modules{
@@ -37,6 +40,7 @@
     text-transform: uppercase; 
     font-size: 1em;
     font-weight: 600;
+    
 }
 
 %fixed-header-prop{

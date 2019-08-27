@@ -33,6 +33,9 @@ Important reminders:
   font-size: 2em;
   position: relative;
   top: 5px; }
+  @media (min-width: 768px) {
+    .title__secondary::after, .title__secondary::before {
+      top: 8px; } }
 
 .title__primary, .title__secondary {
   letter-spacing: 1px;
@@ -399,7 +402,8 @@ header {
 
 main {
   padding-top: 6.2em;
-  width: 100%; }
+  width: 100%;
+  background: #DBDBDB; }
 
 section {
   max-width: 1200px;
@@ -636,8 +640,11 @@ h6 {
     content: "\003c"; }
   @media (min-width: 768px) {
     .title__secondary {
-      font-size: 1em;
+      font-size: 1.3em;
       line-height: 1.5; } }
+  @media (min-width: 1024px) {
+    .title__secondary {
+      font-size: 1.6em; } }
 
 .title__bio {
   position: relative;
@@ -836,6 +843,9 @@ h6 {
 #banner {
   position: relative; }
 
+.content__name {
+  color: #FFBF00; }
+
 #about__me {
   height: 100%; }
 
@@ -888,7 +898,6 @@ h6 {
 
 /*-------Skills Section Class Styles----------*/
 #skills {
-  margin-top: 1.5em;
   padding: 0 1em; }
 
 @media (min-width: 1024px) {
@@ -1020,6 +1029,12 @@ h6 {
   border-radius: 15px; }
 
 /*-------Experience Section Class Styles----------*/
+#projects {
+  background: #132279; }
+
+.portfolio-title {
+  color: #fff; }
+
 .card {
   overflow: hidden;
   position: relative;
@@ -1027,7 +1042,7 @@ h6 {
   width: 80%;
   margin: 2em auto;
   border-radius: 10px 10px 0 0;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 10px 20px rgba(255, 191, 0, 0.5); }
   .card ul {
     margin: 1em; }
 

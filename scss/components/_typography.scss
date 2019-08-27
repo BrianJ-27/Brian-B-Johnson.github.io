@@ -29,7 +29,10 @@
         @extend %psuedo-sec-title;
     }
     @include mq('md'){
-        @include text-prop($size:1em, $l-height: 1.5);
+        @include text-prop($size:1.3em, $l-height: 1.5);
+    }
+    @include mq('lg'){
+        @include text-prop($size:1.6em);
     }
 }
 

@@ -74,14 +74,13 @@ $('a[href*="#"]')
 
 /*--Add Animations on Scroll--*/
 window.sr = ScrollReveal({
-    distance : '150px',
+    distance : '50px',
     easing   : 'ease-in-out',
     mobile   : true,
     delay    : 450,
     reset    : false,
   });
   
-
 
   sr.reveal('.skills', {
     origin: 'left',
@@ -92,6 +91,13 @@ window.sr = ScrollReveal({
   sr.reveal('.content__banner',{
     origin : 'bottom', 
     delay: 1000, 
+  });
+
+  sr.reveal('.content__name',{
+    origin : 'top', 
+    delay: 2000, 
+    easing: 'ease-in',
+    distance: '200px',
   });
 
   

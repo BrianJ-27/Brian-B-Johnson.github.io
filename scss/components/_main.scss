@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.content__name{
+  color: $color-accent;
+}
+
 #about__me{
   height: 100%;
 }
@@ -68,8 +72,8 @@
 
 /*-------Skills Section Class Styles----------*/
 #skills{
-  margin-top: 1.5em;
   padding: 0 1em;
+ 
 }
 
 .skills{
@@ -261,6 +265,14 @@
 
 /*-------Experience Section Class Styles----------*/
 
+#projects{
+  background: $color-main-light;
+}
+
+.portfolio-title{
+  color: $color-text-light;
+}
+
 //Project Card Styles
 .card{
   overflow: hidden;
@@ -269,7 +281,7 @@
   width: 80%;
   margin: 2em auto;  
   border-radius: 10px 10px 0 0;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba($color-accent, 0.5);
   & ul{
      margin: 1em; 
   }
