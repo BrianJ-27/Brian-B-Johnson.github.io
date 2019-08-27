@@ -14,8 +14,22 @@ menu.addEventListener('click', () => {
     navBar.classList.toggle("show__nav");
 });
 
+
+// function elementReveal(){
+//   var skills = document.querySelector('.skills');
+//   var skillsPosition = skills.getBoundingClientRect().top;
+//   var screenPosition = window.innerHeight / 2 ;
+
+//   if(skillsPosition < screenPosition){
+//       skills.classList.add('.skills__reveal');
+//   }
+// }
+
+// window.addEventListener('scroll', elementReveal);
+
+
 //In mobile mode, when a user clicks anywhere on a card the overlay will show
-$('.card').click(function(){
+$('.main__grid--container').click(function(){
   $('.card__overlay').addClass('.card__overlay');
 });
 

@@ -776,7 +776,7 @@ h6 {
 
 .header__container {
   box-shadow: 0 8px 7px -3px #DBDBDB;
-  background-image: url(../img/asfalt--light--1920x1080.png);
+  background-image: url(../img/cubes-1920x1080.png);
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -1016,7 +1016,7 @@ h6 {
   width: 90%;
   padding: .5em;
   top: 10%;
-  left: 8%;
+  left: 4%;
   border-radius: 15px; }
 
 /*-------Experience Section Class Styles----------*/
