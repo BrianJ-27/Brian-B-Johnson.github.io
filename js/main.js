@@ -74,19 +74,18 @@ $('a[href*="#"]')
 
 /*--Add Animations on Scroll--*/
 window.sr = ScrollReveal({
-    distance : '50px',
+    distance : '150px',
     easing   : 'ease-in-out',
     mobile   : true,
     delay    : 450,
     reset    : false,
-    viewFactor: 0.1,
   });
   
 
 
   sr.reveal('.skills', {
     delay: 650,
-    origin: top,
+    origin: 'left',
   });
  
 
