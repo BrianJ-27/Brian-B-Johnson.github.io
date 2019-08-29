@@ -1065,6 +1065,7 @@ h6 {
   width: 80%;
   margin: 2em auto;
   border-radius: 10px 10px 0 0;
+  border: 1px solid #111E6C;
   box-shadow: 0 10px 15px rgba(245, 245, 245, 0.5); }
   .card ul {
     margin: 1em; }

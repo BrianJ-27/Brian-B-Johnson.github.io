@@ -289,6 +289,7 @@
   width: 80%;
   margin: 2em auto;  
   border-radius: 10px 10px 0 0;
+  border: 1px solid $color-border-dark;
   box-shadow: 0 10px 15px rgba($color-bg-light, 0.5);
   & ul{
      margin: 1em; 
