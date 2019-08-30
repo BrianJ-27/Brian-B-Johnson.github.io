@@ -13,6 +13,21 @@
     }
 }
 
+.img__banner{
+    background-image: url(../img/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+    background-position: center;
+    background-size: cover; 
+    height: 15em;
+    @include mq('md'){
+        background-image: url(../img/christopher-gower-m_HRfLhgABo-unsplash-800height.jpg);
+        height: 18em;
+    }
+    @include mq('lg'){
+        height: 26em;
+    }
+}
+ 
+
 //Center and contain all images on page
 .img__banner,
 .img__bio,

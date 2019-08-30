@@ -773,6 +773,19 @@ h6 {
       height: initial; } }
 
 .img__banner {
+  background-image: url(../img/christopher-gower-m_HRfLhgABo-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 15em; }
+  @media (min-width: 768px) {
+    .img__banner {
+      background-image: url(../img/christopher-gower-m_HRfLhgABo-unsplash-800height.jpg);
+      height: 18em; } }
+  @media (min-width: 1024px) {
+    .img__banner {
+      height: 26em; } }
+
+.img__banner {
   filter: brightness(0.5); }
 
 .card-img-top {
