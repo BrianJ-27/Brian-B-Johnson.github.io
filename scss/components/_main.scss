@@ -259,6 +259,12 @@
   top: 10%;
   left: 4%;
   border-radius: 15px;
+  @include mq('md'){
+    top: 24%;
+  }
+  @include mq('md'){
+    top: 28%;
+  }
 }
 
 

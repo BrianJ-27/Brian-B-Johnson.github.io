@@ -7,7 +7,7 @@
     @include text-prop($size:1.28em, $f-weight:400, $color:$color-text-light);
     @extend %text-modules;
     @include mq('md'){
-        @include text-prop($size:2.5em, $f-weight:500);
+        @include text-prop($size:1.8em, $f-weight:500);
     }
     @include mq('lg'){
         @include text-prop($size:1.1em);
