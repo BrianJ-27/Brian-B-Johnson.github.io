@@ -40,7 +40,7 @@
     @include flex_me($dir:column, $vertAlign:center, $just:center);
     padding-bottom: 1.5em;
     @include mq('md'){
-      @include flex_me($dir:row);
+      @include flex_me($dir:row, $just:space-around);
     } 
   }
 

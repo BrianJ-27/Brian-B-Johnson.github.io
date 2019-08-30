@@ -510,7 +510,8 @@ h6 {
   @media (min-width: 768px) {
     .connect__wrapper {
       display: flex;
-      flex-direction: row; } }
+      flex-direction: row;
+      justify-content: space-around; } }
 
 .social__icon--wrapper {
   display: flex;
