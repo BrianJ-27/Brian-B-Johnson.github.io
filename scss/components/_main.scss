@@ -75,6 +75,11 @@
   padding: 0 1em;
 }
 
+// .tech-skills{
+//   max-width: 40%;
+//   margin: 0 auto;
+// }
+
 .skills{
   @include mq('lg'){
     flex-basis: 35%;

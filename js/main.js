@@ -4,9 +4,92 @@
 
 const menu = document.querySelector("header");
 const navBar = document.querySelector(".nav__bar");
+
 // const projectArea = document.querySelector('main');
 // const projectCard = document.querySelectorAll('.card');
 // const cardOverlay = document.querySelector('card__overlay');
+let xLabels = {
+	0 : 'Force is not with you',
+    2 : 'Young Padawan',
+    4 : 'Apprentice',
+    6 : 'Jedi Knight',
+    8 : 'Jedi Master',
+    10 : 'Yoda got nothing on you!',
+    
+}
+
+// const frontEndChart = document.getElementById('front-end');
+
+new Chart(document.getElementById("front-end"), {
+  type: 'horizontalBar',
+  data: {
+    labels: ["HTML5", "CSS3", "SASS", "JAVASCRIPT", "JQUERY"],
+    datasets: [
+      {
+        label: "Front-End Skills",
+        data: [7.3, 7.6, 6.5, 4.5, 7],
+        backgroundColor: '#FFBF00',
+        borderColor: '#111E6C',
+        borderWidth: 2
+      }
+    ]
+  },
+  options: {
+    legend: {
+      display: false
+    },
+    scales: {
+      xAxes: [{
+        gridLines: {
+          drawOnChartArea: false
+        },
+        ticks: {
+          beginAtZero: true,
+          callback: function(value, index, values) {
+            return xLabels[value];
+        }
+        }
+      }]
+    }
+  }
+});
+
+const webToolsChart = document.getElementById('web-tools');
+
+new Chart(document.getElementById("web-tools"), {
+  type: 'horizontalBar',
+  data: {
+    labels: ["GIT", "GITHUB", "VSCODE", "ADOBE PS", "BOOTSTRAP"],
+    datasets: [
+      {
+        label: "Front-End Skills",
+        data: [6, 4, 7.5, 6.5, 8],
+        backgroundColor: '#FFBF00',
+        borderColor: '#111E6C',
+        borderWidth: 2
+      }
+    ]
+  },
+  options: {
+    legend: {
+      display: false
+    },
+    scales: {
+      xAxes: [{
+        gridLines: {
+          drawOnChartArea: false
+        },
+        ticks: {
+          beginAtZero: true,
+          callback: function(value, index, values) {
+            return xLabels[value];
+        }
+        }
+      }]
+    }
+  }
+});
+
 
 /*--Toggle mobile navigation once user clicks on nav menu--*/
 menu.addEventListener('click', () => {
@@ -70,7 +153,7 @@ window.sr = ScrollReveal({
   });
   
 
-  sr.reveal('.skills', {
+  sr.reveal('.tech-skills', {
     origin: 'left',
     delay: 850,
   });
