@@ -74,7 +74,7 @@
 }
 
 // Content in the About Me Section 
-.content__bio{
+.text__bio{
     @include text-prop($size:1em, $l-height:1.6);
     text-align: center;
     padding-bottom: 1em;
