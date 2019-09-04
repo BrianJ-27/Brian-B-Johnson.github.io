@@ -37,7 +37,8 @@ new Chart(document.getElementById("front-end"), {
         data: [7.3, 7.6, 6.5, 4.5, 7],
         backgroundColor: '#FFBF00',
         borderColor: '#111E6C',
-        borderWidth: 2
+        borderWidth: 2,
+        borderCapStyle: 'round',
       }
     ]
   },
@@ -48,13 +49,18 @@ new Chart(document.getElementById("front-end"), {
     scales: {
       xAxes: [{
         gridLines: {
-          drawOnChartArea: false
+          drawOnChartArea: true
         },
         ticks: {
           beginAtZero: true,
           callback: function(value, index, values) {
             return xLabels[value];
         }
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          drawOnChartArea: false
         }
       }]
     }
@@ -84,13 +90,18 @@ new Chart(document.getElementById("web-tools"), {
     scales: {
       xAxes: [{
         gridLines: {
-          drawOnChartArea: false
+          drawOnChartArea: true
         },
         ticks: {
           beginAtZero: true,
           callback: function(value, index, values) {
             return xLabels[value];
         }
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          drawOnChartArea: false
         }
       }]
     }
