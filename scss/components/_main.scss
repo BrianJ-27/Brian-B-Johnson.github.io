@@ -107,7 +107,12 @@
 
 #projects{
   background: $color-main-light;
+  background-image: url(../img/cool-background.png);
+  background-size: contain;
+  background-repeat: repeat;
+  position: relative;
 }
+
 
 .portfolio-title,
 .contact{

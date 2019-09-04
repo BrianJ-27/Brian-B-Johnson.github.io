@@ -998,9 +998,6 @@ h6:nth-of-type(2) {
 
 .header__container {
   box-shadow: 0 8px 7px -3px #DBDBDB;
-  background-image: url(../img/cubes-1920x1080.png);
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .hex-icon {
@@ -1185,6 +1182,10 @@ h6:nth-of-type(2) {
 /*-------Experience Section Class Styles----------*/
 #projects {
   background: #132279;
+  background-image: url(../img/cool-background.png);
+  background-size: contain;
+  background-repeat: repeat;
+  position: relative;
 }
 
 .portfolio-title,
