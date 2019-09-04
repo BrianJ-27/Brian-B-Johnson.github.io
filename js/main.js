@@ -66,7 +66,7 @@ const webToolsChart = document.getElementById('web-tools');
 new Chart(document.getElementById("web-tools"), {
   type: 'horizontalBar',
   data: {
-    labels: ["GIT", "GITHUB", "VSCODE", "ADOBE PS", "BOOTSTRAP"],
+    labels: ["GIT", "MYSQL", "VSCODE", "ADOBE PS", "BOOTSTRAP"],
     datasets: [
       {
         label: "Front-End Skills",
