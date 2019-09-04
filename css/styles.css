@@ -843,7 +843,7 @@ h6:nth-of-type(2) {
 .text__bio {
   font-size: 1em;
   line-height: 1.6;
-  text-align: center;
+  text-align: justify;
   padding-bottom: 1em;
 }
 @media (min-width: 768px) {
@@ -851,7 +851,6 @@ h6:nth-of-type(2) {
     font-size: 0.8em;
     line-height: 1.5;
     padding-left: 2em;
-    text-align: left;
   }
 }
 @media (min-width: 1024px) {
