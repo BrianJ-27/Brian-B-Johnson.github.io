@@ -5,9 +5,16 @@
 const menu = document.querySelector("header");
 const navBar = document.querySelector(".nav__bar");
 
-// const projectArea = document.querySelector('main');
-// const projectCard = document.querySelectorAll('.card');
-// const cardOverlay = document.querySelector('card__overlay');
+/*--Toggle mobile navigation once user clicks on nav menu--*/
+menu.addEventListener('click', () => {
+  menu.classList.toggle("change");
+  navBar.classList.toggle("show__nav");
+});
+
+
+
+
+
 let xLabels = {
 	0 : 'Force is not with you',
     2 : 'Young Padawan',
@@ -30,7 +37,8 @@ new Chart(document.getElementById("front-end"), {
         data: [7.3, 7.6, 6.5, 4.5, 7],
         backgroundColor: '#FFBF00',
         borderColor: '#111E6C',
-        borderWidth: 2
+        borderWidth: 2,
+        borderCapStyle: 'round',
       }
     ]
   },
@@ -41,13 +49,18 @@ new Chart(document.getElementById("front-end"), {
     scales: {
       xAxes: [{
         gridLines: {
-          drawOnChartArea: false
+          drawOnChartArea: true
         },
         ticks: {
           beginAtZero: true,
           callback: function(value, index, values) {
             return xLabels[value];
         }
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          drawOnChartArea: false
         }
       }]
     }
@@ -59,7 +72,7 @@ const webToolsChart = document.getElementById('web-tools');
 new Chart(document.getElementById("web-tools"), {
   type: 'horizontalBar',
   data: {
-    labels: ["GIT", "GITHUB", "VSCODE", "ADOBE PS", "BOOTSTRAP"],
+    labels: ["GIT", "MYSQL", "VSCODE", "ADOBE PS", "BOOTSTRAP"],
     datasets: [
       {
         label: "Front-End Skills",
@@ -77,7 +90,7 @@ new Chart(document.getElementById("web-tools"), {
     scales: {
       xAxes: [{
         gridLines: {
-          drawOnChartArea: false
+          drawOnChartArea: true
         },
         ticks: {
           beginAtZero: true,
@@ -85,24 +98,20 @@ new Chart(document.getElementById("web-tools"), {
             return xLabels[value];
         }
         }
+      }],
+      yAxes: [{
+        gridLines: {
+          drawOnChartArea: false
+        }
       }]
     }
   }
 });
 
-
-/*--Toggle mobile navigation once user clicks on nav menu--*/
-menu.addEventListener('click', () => {
-    menu.classList.toggle("change");
-    navBar.classList.toggle("show__nav");
-});
-
-
 //In mobile mode, when a user clicks anywhere on a card the overlay will show
 $('.main__grid--container').click(function(){
   $('.card__overlay').addClass('.card__overlay');
 });
-
 
 /*--Add Smooth Scroll to Page--*/
 

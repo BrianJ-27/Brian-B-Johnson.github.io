@@ -74,14 +74,13 @@
 }
 
 // Content in the About Me Section 
-.content__bio{
+.text__bio{
     @include text-prop($size:1em, $l-height:1.6);
-    text-align: center;
+    text-align: justify;
     padding-bottom: 1em;
     @include mq('md'){
         @include text-prop($size:.8em, $l-height:1.5);
         padding-left: 2em;
-        text-align: left;
     }
     @include mq('lg'){
         @include text-prop($size:1.1em);

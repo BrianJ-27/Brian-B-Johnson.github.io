@@ -8,9 +8,14 @@
     background-position: center;
     background-size: cover;
     height: 15em;
+    width: 100%;
     @include mq ('md'){
         height: initial;
+        flex: 1 45%;
     }
+    @include mq('lg'){
+        flex-basis: 40%;
+      }
 }
 
 .img__banner{
@@ -23,7 +28,7 @@
         height: 18em;
     }
     @include mq('lg'){
-        height: 26em;
+        height: 40em;
     }
 }
  
