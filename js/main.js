@@ -34,7 +34,7 @@ new Chart(document.getElementById("front-end"), {
     datasets: [
       {
         label: "Front-End Skills",
-        data: [7.3, 7.6, 6.5, 4.5, 7],
+        data: [7.3, 7.6, 5, 4.5, 5.5],
         backgroundColor: '#FFBF00',
         borderColor: '#111E6C',
         borderWidth: 2,
@@ -76,7 +76,7 @@ new Chart(document.getElementById("web-tools"), {
     datasets: [
       {
         label: "Front-End Skills",
-        data: [6, 4, 7.5, 6.5, 8],
+        data: [6.3, 4, 7, 5.9, 5],
         backgroundColor: '#FFBF00',
         borderColor: '#111E6C',
         borderWidth: 2
