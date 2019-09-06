@@ -16,13 +16,12 @@ menu.addEventListener('click', () => {
 
 
 let xLabels = {
-	0 : 'Force is not with you',
+	  0 : 'Force is not with you',
     2 : 'Young Padawan',
     4 : 'Apprentice',
     6 : 'Jedi Knight',
     8 : 'Jedi Master',
-    10 : 'Yoda got nothing on you!',
-    
+    10 : 'Yoda got nothing on you!',  
 }
 
 // const frontEndChart = document.getElementById('front-end');
@@ -55,7 +54,7 @@ new Chart(document.getElementById("front-end"), {
           beginAtZero: true,
           callback: function(value, index, values) {
             return xLabels[value];
-        }
+          }
         }
       }],
       yAxes: [{
@@ -76,7 +75,7 @@ new Chart(document.getElementById("web-tools"), {
     datasets: [
       {
         label: "Front-End Skills",
-        data: [6.3, 4, 7, 5.9, 5],
+        data: [6.3, 4, 7.5, 5.9, 5],
         backgroundColor: '#FFBF00',
         borderColor: '#111E6C',
         borderWidth: 2
@@ -96,7 +95,7 @@ new Chart(document.getElementById("web-tools"), {
           beginAtZero: true,
           callback: function(value, index, values) {
             return xLabels[value];
-        }
+          }
         }
       }],
       yAxes: [{
